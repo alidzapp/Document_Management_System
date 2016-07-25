@@ -2,74 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16012fb9-9e9f-47ec-9b51-afde20e60455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/glogin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/Logout.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/Google_Client.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_AssertionCredentials.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_Auth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_AuthNone.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_LoginTicket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_OAuth2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_P12Signer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_PemVerifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_Signer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_Verifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_ApcCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_Cache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_FileCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_MemcacheCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdexchangebuyerService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdsenseService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdsensehostService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AnalyticsService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BigqueryService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BloggerService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BooksService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_CalendarService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ComputeService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_CustomsearchService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_DriveService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_FreebaseService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_FusiontablesService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_GanService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_LatitudeService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_LicensingService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ModeratorService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_Oauth2Service.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_OrkutService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PagespeedonlineService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PlusMomentsService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PlusService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PredictionService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ShoppingService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_SiteVerificationService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_StorageService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TaskqueueService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TasksService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TranslateService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_UrlshortenerService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_WebfontsService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_YoutubeService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/external/URITemplateParser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_CacheParser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_CurlIO.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_HttpRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_IO.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_REST.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/io/cacerts.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_BatchRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_MediaFileUpload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_Model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_Service.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_ServiceResource.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_Utils.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/Document_model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/Access_control_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/Department_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/Role_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/User_logs_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/User_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Login.php" afterPath="$PROJECT_DIR$/application/controllers/Login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Mydms.php" afterPath="$PROJECT_DIR$/application/controllers/Mydms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/account.php" afterPath="$PROJECT_DIR$/application/views/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/login.php" afterPath="$PROJECT_DIR$/application/views/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/google_login.php" afterPath="$PROJECT_DIR$/application/views/google_login.php" />
     </list>
     <ignored path="mydms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,41 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mydms.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Mydms.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Mydms.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1044">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <marker date="1469462039567" expanded="true" signature="476:500" ph="select * fro... login_logs" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cacerts.pem" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/src/io/cacerts.pem">
+      <file leaf-file-name="google_login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/google_login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="377">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -140,41 +65,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Logout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="google_login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/google_login.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User_model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/User_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Role_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Role_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User_logs_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/User_logs_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Department_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Department_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Access_control_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Access_control_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -197,7 +152,14 @@
         <option value="$PROJECT_DIR$/application/views/account.php" />
         <option value="$PROJECT_DIR$/application/controllers/Logout.php" />
         <option value="$PROJECT_DIR$/application/views/login.php" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/models/User_logs.php" />
+        <option value="$PROJECT_DIR$/application/models/Role_model.php" />
+        <option value="$PROJECT_DIR$/application/models/User_logs_model.php" />
+        <option value="$PROJECT_DIR$/application/models/User_model.php" />
         <option value="$PROJECT_DIR$/application/controllers/Mydms.php" />
+        <option value="$PROJECT_DIR$/application/views/google_login.php" />
       </list>
     </option>
   </component>
@@ -209,9 +171,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
-    <option name="width" value="2560" />
-    <option name="height" value="1413" />
+    <option name="width" value="1440" />
+    <option name="height" value="2560" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -269,6 +230,88 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,22 +381,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1469451425137</updated>
-      <workItem from="1469451426470" duration="4717000" />
+      <workItem from="1469451426470" duration="10121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4717000" />
+    <option name="totallyTimeSpent" value="10121000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="2560" height="1413" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="2560" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19166666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -416,14 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/google_login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -464,22 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/src/io/cacerts.pem">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -512,10 +531,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/src/io/cacerts.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/User_logs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Role_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/User_logs_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Access_control_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Mydms.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="1044">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1469462039567" expanded="true" signature="476:500" ph="select * fro... login_logs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Department_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/google_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/User_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding />
         </state>
       </provider>
