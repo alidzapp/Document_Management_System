@@ -8,24 +8,25 @@ class Mydms extends CI_Controller {
         parent::__construct();
         session_start();
         $this->load->helper('url');
+        if(!isset($_SESSION['google_data'])){
+            redirect('/login/', 'location');
+        }
+
     }
 
-    public function index()
-
+    public function view()
     {
 
-        $title="SCL : Document Management System";
+            $title="SCL : Document Management System :Docs";
 
-        $data['title'] = ucfirst($title); // Capitalize the first letter
+            $data['title'] = ucfirst($title); // Capitalize the first letter
 
-        $this->load->view('header', $data);
-        $this->load->view('account');
-        $this->load->view('google_login');
-        $this->load->view('footer', $data);
+            $this->load->view('header', $data);
+            $this->load->view('account');
+            $this->load->view('google_login');
+            $this->load->view('footer', $data);
 
 
     }
-
-
 
 }

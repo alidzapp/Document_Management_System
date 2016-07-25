@@ -9,7 +9,7 @@
     echo '<p><b>Email : </b>' . $_SESSION['google_data']['email'].'</p>';    
     echo '<p><b>Locale : </b>' . $_SESSION['google_data']['locale'].'</p>';
     echo '<p><b>You are login with : </b>Google</p>';
-    echo '<p><b>Logout from <a href="logout.php?logout">Google</a></b></p>';
+    echo '<p><b>Logout from <a href="/logout/?logout">Google</a></b></p>';
     echo '</div>';
     ?>
 </div>

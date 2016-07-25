@@ -33,7 +33,7 @@ if ($gClient->getAccessToken()) {
 }
 
 if(isset($authUrl)) {
-	echo '<a href="'.$authUrl.'"><img src="images/glogin.png" alt=""/></a>';
+	echo '<a href="'.$authUrl.'"><img src="/glogin.png" alt=""/></a>';
 } else {
 	echo '<a href="logout.php?logout">Logout</a>';
 }
