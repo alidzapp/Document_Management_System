@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     //var_dump($query);
 
     foreach ($query as $row) {
-        echo $row->username;
+        //echo $row->username;
     }
     ?>
     </pre>

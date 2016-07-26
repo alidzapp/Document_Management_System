@@ -1,6 +1,7 @@
 <?php
 class Users {
 	public $tableName = 'login_logs';
+	public $user_table_Name = 'user';
 	
 	function __construct(){
 		//database configuration
@@ -29,6 +30,22 @@ class Users {
 		$query = mysqli_query($this->connect,"SELECT * FROM $this->tableName WHERE oauth_provider = '".$oauth_provider."' AND oauth_uid = '".$oauth_uid."'") or die(mysqli_error($this->connect));
 		$result = mysqli_fetch_array($query);
 		return $result;
+	}
+
+	function isUserAuthenticatedForSystemUse($email){
+
+		$sql_query="SELECT * FROM ".$this->user_table_Name." WHERE username = '".$email."'";
+		//echo $sql_query;
+
+		$prevQuery = mysqli_query($this->connect,$sql_query) or die(mysqli_error($this->connect));
+
+		if(mysqli_num_rows($prevQuery) > 0 && mysqli_num_rows($prevQuery) ==1) {
+			$result = mysqli_fetch_array($prevQuery);
+		}
+		if(isset($result) && count($result)==1){
+			return true;
+		}
+		return false;
 	}
 }
 ?>

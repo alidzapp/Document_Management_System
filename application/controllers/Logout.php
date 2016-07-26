@@ -41,7 +41,7 @@ class Logout extends CI_Controller
             unset($_SESSION['google_data']); //Google session data unset
             $gClient->revokeToken();
             session_destroy();
-            redirect('/login/', 'location');
+            redirect('/login/?Message='.$_GET["Message"], 'location');
         //}
 
 

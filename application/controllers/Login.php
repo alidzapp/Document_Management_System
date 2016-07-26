@@ -18,7 +18,11 @@ class Login extends CI_Controller {
             redirect('/mydms/view');
 		}
 		else{
-			$this->load->view('login');
+			$data=array();
+		    if(isset($_GET["Message"])){
+			    $data["Message"]=$_GET["Message"];
+            }
+		    $this->load->view('login',$data);
 		}
 
 	}

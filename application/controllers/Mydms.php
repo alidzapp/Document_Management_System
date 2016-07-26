@@ -21,15 +21,6 @@ class Mydms extends CI_Controller
 
         $title = "SCL : Document Management System :Docs";
 
-        /*$query = $this->db->query("select * from login_logs;");
-
-        $count = $query->num_rows();
-
-        var_dump($query->result());
-        if ($query->result()) {
-            $data['title'] = $query->result()[0]->email;
-        }*/
-
         $this->load->model('User_model');
 
         $data['query'] = $this->User_model->get_last_ten_entries();
