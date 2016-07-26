@@ -4,10 +4,11 @@ include("config.php");
 include("includes/functions.php");
 
 
+
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-//var_dump($Session);
 
 
 if (isset($_REQUEST['code'])) {
@@ -24,7 +25,7 @@ if ($gClient->getAccessToken()) {
     $userProfile = $google_oauthV2->userinfo->get();
     //DB Insert
     $gUser = new Users();
-    //$gUser->checkUser('google', $userProfile['id'], $userProfile['given_name'], $userProfile['family_name'], $userProfile['email'], $userProfile['gender'], $userProfile['locale'], $userProfile['link'], $userProfile['picture']);
+    $gUser->checkUser('google', $userProfile['id'], $userProfile['given_name'], $userProfile['family_name'], $userProfile['email'], $userProfile['gender'], $userProfile['locale'], $userProfile['link'], $userProfile['picture']);
 
 
     /// create the session
