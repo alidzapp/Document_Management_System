@@ -5,6 +5,7 @@ class Department extends CI_Controller
 {
 
 
+    public  $utilities=array();
     function __construct()
     {
         parent::__construct();
@@ -14,6 +15,7 @@ class Department extends CI_Controller
             redirect('/login/', 'location');
         }
         $this->load->model('Department_model');
+        $this->utilities["page_name"]="department";
 
 
 
@@ -27,7 +29,7 @@ class Department extends CI_Controller
         $data['query'] = $this->Department_model->get_entries(100, 0);
 
         $this->load->view('header');
-        $this->load->view('wrapper');
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('department/view', $data);
         $this->load->view('footer');
 
@@ -41,7 +43,7 @@ class Department extends CI_Controller
         $id = $this->uri->segment('3');
         $data['query'] = $this->Department_model->get_entry_by_id($id);
         $this->load->view('header');
-        $this->load->view('wrapper');
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('department/edit', $data);
         $this->load->view('footer');
 
@@ -53,7 +55,7 @@ class Department extends CI_Controller
 
 
         $this->load->view('header');
-        $this->load->view('wrapper');
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('department/add');
         $this->load->view('footer');
 

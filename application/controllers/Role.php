@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class User extends CI_Controller
+class Role extends CI_Controller
 {
 
 
@@ -15,8 +15,8 @@ class User extends CI_Controller
         if (!isset($_SESSION['google_data'])) {
             redirect('/login/', 'location');
         }
-        $this->load->model('User_model');
-        $this->utilities["page_name"]="user";
+        $this->load->model('Role_model');
+        $this->utilities["page_name"]="role";
 
 
     }
@@ -26,12 +26,12 @@ class User extends CI_Controller
     {
 
 
-        $data['query'] = $this->User_model->get_entries(100, 0);
+        $data['query'] = $this->Role_model->get_entries(100, 0);
 
 
         $this->load->view('header');
         $this->load->view('wrapper',$this->utilities);
-        $this->load->view('user/view', $data);
+        $this->load->view('role/view', $data);
         $this->load->view('footer');
 
 
@@ -42,10 +42,10 @@ class User extends CI_Controller
 
 
         $id = $this->uri->segment('3');
-        $data['query'] = $this->User_model->get_entry_by_id($id);
+        $data['query'] = $this->Role_model->get_entry_by_id($id);
         $this->load->view('header');
         $this->load->view('wrapper',$this->utilities);
-        $this->load->view('user/edit', $data);
+        $this->load->view('role/edit', $data);
         $this->load->view('footer');
 
 
@@ -57,7 +57,7 @@ class User extends CI_Controller
 
         $this->load->view('header');
         $this->load->view('wrapper',$this->utilities);
-        $this->load->view('user/add');
+        $this->load->view('role/add');
         $this->load->view('footer');
 
 
@@ -66,15 +66,15 @@ class User extends CI_Controller
     public function edit_exec()
     {
 
-        $data['query'] = $this->User_model->update_entry();
-        redirect('user/view');
+        $data['query'] = $this->Role_model->update_entry();
+        redirect('role/view');
     }
 
     public function add_exec()
     {
 
-        $data['query'] = $this->User_model->insert_entry();
-        redirect('user/view');
+        $data['query'] = $this->Role_model->insert_entry();
+        redirect('role/view');
     }
 
     public function delete_exec()
@@ -82,8 +82,8 @@ class User extends CI_Controller
 
 
         $id = $this->uri->segment('3');
-        $data['query'] = $this->User_model->row_delete($id);
-        redirect('user/view');
+        //$data['query'] = $this->Role_model->row_delete($id);
+        redirect('role/view');
     }
 
 }

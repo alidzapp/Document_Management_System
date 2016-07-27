@@ -13,20 +13,21 @@
 
             <ul class="nav">
 
-                <li class="active">
+                <li <?php if($page_name=="main"){ ?>class="active"<?php } ?>>
                     <a href="/mydms/view">
                         <i class="pe-7s-user"></i>
                         <p>User Profile</p>
                     </a>
                 </li>
-                <li >
+
+                <li <?php if($page_name=="user"){ ?>class="active"<?php } ?>>
                     <a href="/user/view">
                         <i class="pe-7s-user"></i>
                         <p>User</p>
                     </a>
                 </li>
-                <li>
-                    <a href="/mydms/view">
+                <li <?php if($page_name=="role"){ ?>class="active"<?php } ?>>
+                    <a href="/role/view">
                         <i class="pe-7s-news-paper"></i>
                         <p>Role</p>
                     </a>
@@ -35,6 +36,12 @@
                     <a href="/department/view">
                         <i class="pe-7s-science"></i>
                         <p>Departemts</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/mydms/view">
+                        <i class="pe-7s-user"></i>
+                        <p>Access Control</p>
                     </a>
                 </li>
                 <li>
