@@ -20,7 +20,7 @@
                     </a>
                 </li>
                 <li >
-                    <a href="/mydms/user_list">
+                    <a href="/user/view">
                         <i class="pe-7s-user"></i>
                         <p>User</p>
                     </a>
