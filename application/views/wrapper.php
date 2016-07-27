@@ -32,14 +32,14 @@
                         <p>Role</p>
                     </a>
                 </li>
-                <li>
+                <li <?php if($page_name=="department"){ ?>class="active"<?php } ?>>
                     <a href="/department/view">
                         <i class="pe-7s-science"></i>
                         <p>Departemts</p>
                     </a>
                 </li>
-                <li>
-                    <a href="/mydms/view">
+                <li <?php if($page_name=="access_control"){ ?>class="active"<?php } ?>>
+                    <a href="/access_control/view">
                         <i class="pe-7s-user"></i>
                         <p>Access Control</p>
                     </a>

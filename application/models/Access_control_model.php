@@ -6,50 +6,60 @@ class Access_control_model extends CI_Model
     public $table_name;
 
     public $id;
+    public $user_id;
     public $role_id;
     public $department_id;
-
 
 
     public function __construct()
     {
 // Call the CI_Model constructor
         parent::__construct();
-        $this->table_name="access_control";
+        $this->config->load('db_tables');
     }
 
     public function get_entries($limit, $offset)
     {
-        $query = $this->db->get($this->table_name, $limit, $offset);
+        $query = $this->db->get($this->config->item('access_control_table'), $limit, $offset);
         return $query->result();
     }
 
     public function get_entry_by_id($id)
     {
-        $query = $this->db->get_where($this->table_name, array('id' => $id));
-        return $query;
+        $query = $this->db->get_where($this->config->item('access_control_table'), array('id' => $id));
+        return $query->result();
     }
 
     public function get_last_ten_entries()
     {
-        $query = $this->db->get($this->table_name, 10);
+        $query = $this->db->get($this->config->item('access_control_table'), 10);
         return $query->result();
     }
 
     public function insert_entry()
     {
-        $this->role_id = $_POST['role_id']; // please read the below note
-        $this->department_id = $_POST['department_id'];
+        $this->user_id = $this->input->post('user_id', true);
+        $this->role_id = $this->input->post('role_id', true);
+        $this->department_id = $this->input->post('department_id', true);
 
-        $this->db->insert($this->table_name, $this);
+        $this->db->insert($this->config->item('access_control_table'), $this);
     }
 
     public function update_entry()
     {
-        $this->role_id = $_POST['role_id']; // please read the below note
-        $this->department_id = $_POST['department_id'];
+        $this->id = $this->input->post('id', true);
+        $this->user_id = $this->input->post('user_id', true);
+        $this->role_id = $this->input->post('role_id', true);
+        $this->department_id = $this->input->post('department_id', true);
 
-        $this->db->update($this->table_name, $this, array('id' => $_POST['id']));
+        $this->db->update($this->config->item('access_control_table'), $this, array('id' => $this->id));
+    }
+
+    function row_delete($id)
+    {
+
+        $this->db->where('id', $id);
+        $this->db->delete($this->config->item('user_table'));
     }
 
 }
