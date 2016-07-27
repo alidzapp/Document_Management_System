@@ -3,7 +3,6 @@
 class Access_control_model extends CI_Model
 {
 
-    public $table_name;
 
     public $id;
     public $user_id;
@@ -20,7 +19,26 @@ class Access_control_model extends CI_Model
 
     public function get_entries($limit, $offset)
     {
-        $query = $this->db->get($this->config->item('access_control_table'), $limit, $offset);
+        if ($limit == 0 && $offset == 0) {
+            $query = $this->db->get($this->config->item('access_control_table'));
+        } else {
+            $query = $this->db->get($this->config->item('access_control_table'), $limit, $offset);
+        }
+        return $query->result();
+    }
+
+    public function get_entries_joined()
+    {
+
+        $main_t = $this->config->item('access_control_table');
+
+        $this->db->select(" " . $main_t . ".id as id,   " . $this->config->item('user_table') . ".username as user, " . $this->config->item('role_table') . ".name as role , " . $this->config->item('department_table') . ".name as department");
+        $this->db->from($main_t);
+        $this->db->join($this->config->item('user_table'), $main_t . ".user_id = " . $this->config->item('user_table') . ".id", 'left');
+        $this->db->join($this->config->item('role_table'), $main_t . ".role_id = " . $this->config->item('role_table') . ".id", 'left');
+        $this->db->join($this->config->item('department_table'), $main_t . ".department_id = " . $this->config->item('department_table') . ".id", 'left');
+        $query = $this->db->get();
+        //echo $this->db->last_query();
         return $query->result();
     }
 
@@ -28,6 +46,7 @@ class Access_control_model extends CI_Model
     {
         $query = $this->db->get_where($this->config->item('access_control_table'), array('id' => $id));
         return $query->result();
+
     }
 
     public function get_last_ten_entries()
@@ -43,6 +62,8 @@ class Access_control_model extends CI_Model
         $this->department_id = $this->input->post('department_id', true);
 
         $this->db->insert($this->config->item('access_control_table'), $this);
+
+        echo $this->db->last_query();
     }
 
     public function update_entry()
@@ -59,7 +80,7 @@ class Access_control_model extends CI_Model
     {
 
         $this->db->where('id', $id);
-        $this->db->delete($this->config->item('user_table'));
+        $this->db->delete($this->config->item('access_control_table'));
     }
 
 }

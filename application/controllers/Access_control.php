@@ -5,7 +5,8 @@ class Access_control extends CI_Controller
 {
 
 
-    public  $utilities=array();
+    public $utilities = array();
+
     function __construct()
     {
         parent::__construct();
@@ -15,8 +16,11 @@ class Access_control extends CI_Controller
             redirect('/login/', 'location');
         }
         $this->load->model('Access_control_model');
-        $this->utilities["page_name"]="access_control";
+        $this->load->model('User_model');
+        $this->load->model('Role_model');
+        $this->load->model('Department_model');
 
+        $this->utilities["page_name"] = "access_control";
 
 
     }
@@ -26,7 +30,8 @@ class Access_control extends CI_Controller
     {
 
 
-        $data['query'] = $this->Access_control_model->get_entries(100, 0);
+        $data['query'] = $this->Access_control_model->get_entries_joined();
+
 
         $this->load->view('header');
         $this->load->view('wrapper', $this->utilities);
@@ -36,37 +41,21 @@ class Access_control extends CI_Controller
 
     }
 
-    public function edit()
-    {
 
-
-        $id = $this->uri->segment('3');
-        $data['query'] = $this->Access_control_model->get_entry_by_id($id);
-        $this->load->view('header');
-        $this->load->view('wrapper', $this->utilities);
-        $this->load->view('access_control/edit', $data);
-        $this->load->view('footer');
-
-
-    }
 
     public function add()
     {
 
+        $data['roles'] = $this->Role_model->get_entries(1000, 0);
+        $data['users'] = $this->User_model->get_entries(1000, 0);
+        $data['departments'] = $this->Department_model->get_entries(1000, 0);
 
         $this->load->view('header');
         $this->load->view('wrapper', $this->utilities);
-        $this->load->view('access_control/add');
+        $this->load->view('access_control/add', $data);
         $this->load->view('footer');
 
 
-    }
-
-    public function edit_exec()
-    {
-
-        $data['query'] = $this->Access_control_model->update_entry();
-        redirect('access_control/view');
     }
 
     public function add_exec()
