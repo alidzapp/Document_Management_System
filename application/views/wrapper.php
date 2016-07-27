@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/mydms/view">
+                    <a href="/department/view">
                         <i class="pe-7s-science"></i>
                         <p>Departemts</p>
                     </a>
