@@ -12,7 +12,6 @@
                             <thead>
                             <th>ID</th>
                             <th>Username</th>
-                            <th>Role</th>
                             <th>Department</th>
                             <th width="5%">&nbsp</th>
                             <th width="5%">&nbsp;</th>
@@ -28,13 +27,6 @@
                                             <?php foreach ($users as $row) { ?>
                                                 <option
                                                     value="<?php echo $row->id; ?>"><?php echo $row->username; ?></option>
-                                            <?php } ?>
-                                        </select></td>
-                                    <td><select required="true" name="role_id" class="selectpicker form-control">
-                                            <option value="">--Choose Role--</option>
-                                            <?php foreach ($roles as $row) { ?>
-                                                <option
-                                                    value="<?php echo $row->id; ?>"><?php echo $row->name; ?></option>
                                             <?php } ?>
                                         </select></td>
                                     <td><select required="true" name="department_id" class="selectpicker form-control">

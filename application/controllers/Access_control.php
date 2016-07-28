@@ -17,7 +17,7 @@ class Access_control extends CI_Controller
         }
         $this->load->model('Access_control_model');
         $this->load->model('User_model');
-        $this->load->model('Role_model');
+
         $this->load->model('Department_model');
 
         $this->utilities["page_name"] = "access_control";
@@ -42,11 +42,10 @@ class Access_control extends CI_Controller
     }
 
 
-
     public function add()
     {
 
-        $data['roles'] = $this->Role_model->get_entries(1000, 0);
+
         $data['users'] = $this->User_model->get_entries(1000, 0);
         $data['departments'] = $this->Department_model->get_entries(1000, 0);
 
@@ -61,15 +60,13 @@ class Access_control extends CI_Controller
     public function add_exec()
     {
 
-       try {
-           $data['query'] = $this->Access_control_model->insert_entry();
-       }
-       catch (Exception $e) {
-           echo 'Caught exception: ',  $e->getMessage(), "\n";
-       }
-       finally{
-           redirect('access_control/view');
-       }
+        try {
+            $data['query'] = $this->Access_control_model->insert_entry();
+        } catch (Exception $e) {
+            echo 'Caught exception: ', $e->getMessage(), "\n";
+        } finally {
+            redirect('access_control/view');
+        }
 
     }
 

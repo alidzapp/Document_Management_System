@@ -17,7 +17,6 @@
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>
-                            <th>&nbsp;</th>
                             <th>
                                 <button type="button" class="btn btn-success"
                                         onclick="window.location.href='/access_control/add'">Grant Access
@@ -27,7 +26,6 @@
                             <thead>
                             <th>ID</th>
                             <th>Username</th>
-                            <th>Role</th>
                             <th>Department</th>
                             <th width="5%">&nbsp</th>
                             <th width="5%">&nbsp;</th>
@@ -42,7 +40,6 @@
                                 <tr>
                                     <td><?php echo $row->id; ?></td>
                                     <td><?php echo $row->user; ?></td>
-                                    <td><?php echo $row->role; ?></td>
                                     <td><?php echo $row->department; ?></td>
                                     <td>&nbsp;
                                     </td>

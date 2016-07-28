@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16012fb9-9e9f-47ec-9b51-afde20e60455" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Access_control.php" afterPath="$PROJECT_DIR$/application/controllers/Access_control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/User.php" afterPath="$PROJECT_DIR$/application/controllers/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Access_control_model.php" afterPath="$PROJECT_DIR$/application/models/Access_control_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/User_model.php" afterPath="$PROJECT_DIR$/application/models/User_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/login.php" afterPath="$PROJECT_DIR$/application/views/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/role/view.php" afterPath="$PROJECT_DIR$/application/views/role/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/user/add.php" afterPath="$PROJECT_DIR$/application/views/user/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/user/edit.php" afterPath="$PROJECT_DIR$/application/views/user/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/user/view.php" afterPath="$PROJECT_DIR$/application/views/user/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/edit.php" afterPath="$PROJECT_DIR$/application/views/wiki/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/viewwiki.php" afterPath="$PROJECT_DIR$/application/views/wiki/viewwiki.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/functions.php" afterPath="$PROJECT_DIR$/includes/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/access_control/add.php" afterPath="$PROJECT_DIR$/application/views/access_control/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/access_control/view.php" afterPath="$PROJECT_DIR$/application/views/access_control/view.php" />
     </list>
     <ignored path="mydms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/user/view.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="667">
@@ -55,11 +46,41 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Access_control_model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/Access_control_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1479">
+              <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Access_control.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Access_control.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="957">
+              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/access_control/add.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/access_control/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2059">
-              <caret line="71" column="58" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="63" />
+            <state relative-caret-position="1218">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -133,8 +154,6 @@
         <option value="$PROJECT_DIR$/application/controllers/Role.php" />
         <option value="$PROJECT_DIR$/application/controllers/Department.php" />
         <option value="$PROJECT_DIR$/application/views/access_control/edit.php" />
-        <option value="$PROJECT_DIR$/application/views/access_control/add.php" />
-        <option value="$PROJECT_DIR$/application/views/access_control/view.php" />
         <option value="$PROJECT_DIR$/application/config/db_tables.php" />
         <option value="$PROJECT_DIR$/application/models/File_model.php" />
         <option value="$PROJECT_DIR$/application/views/wrapper.php" />
@@ -147,8 +166,6 @@
         <option value="$PROJECT_DIR$/application/views/wiki/add.php" />
         <option value="$PROJECT_DIR$/application/views/login.php" />
         <option value="$PROJECT_DIR$/includes/functions.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Access_control.php" />
-        <option value="$PROJECT_DIR$/application/models/Access_control_model.php" />
         <option value="$PROJECT_DIR$/application/models/User_model.php" />
         <option value="$PROJECT_DIR$/application/views/user/add.php" />
         <option value="$PROJECT_DIR$/application/views/wiki/edit.php" />
@@ -156,6 +173,10 @@
         <option value="$PROJECT_DIR$/application/views/role/view.php" />
         <option value="$PROJECT_DIR$/application/controllers/User.php" />
         <option value="$PROJECT_DIR$/application/views/user/view.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Access_control.php" />
+        <option value="$PROJECT_DIR$/application/views/access_control/add.php" />
+        <option value="$PROJECT_DIR$/application/views/access_control/view.php" />
+        <option value="$PROJECT_DIR$/application/models/Access_control_model.php" />
       </list>
     </option>
   </component>
@@ -510,12 +531,12 @@
       <workItem from="1469521840370" duration="1594000" />
       <workItem from="1469524154119" duration="15378000" />
       <workItem from="1469608587374" duration="19929000" />
-      <workItem from="1469694466183" duration="19680000" />
+      <workItem from="1469694466183" duration="20059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67617000" />
+    <option name="totallyTimeSpent" value="67996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="37" width="1440" height="2523" extended-state="6" />
@@ -827,33 +848,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Access_control_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1711">
-          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/na.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Access_control.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/access_control/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="34" column="39" selection-start-line="32" selection-start-column="36" selection-end-line="38" selection-end-column="54" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/User_model.php">
@@ -896,14 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/access_control/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2059">
-          <caret line="71" column="58" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/department/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
@@ -934,6 +923,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="667">
           <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/access_control/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/access_control/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Access_control.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Access_control_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
           <folding />
         </state>
       </provider>
