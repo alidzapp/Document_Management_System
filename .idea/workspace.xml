@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16012fb9-9e9f-47ec-9b51-afde20e60455" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/wiki/viewwiki.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Wiki.php" afterPath="$PROJECT_DIR$/application/controllers/Wiki.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/footer.php" afterPath="$PROJECT_DIR$/application/views/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/header.php" afterPath="$PROJECT_DIR$/application/views/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/add.php" afterPath="$PROJECT_DIR$/application/views/wiki/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Wiki_model.php" afterPath="$PROJECT_DIR$/application/models/Wiki_model.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/edit.php" afterPath="$PROJECT_DIR$/application/views/wiki/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/view.php" afterPath="$PROJECT_DIR$/application/views/wiki/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/viewwiki.php" afterPath="$PROJECT_DIR$/application/views/wiki/viewwiki.php" />
     </list>
     <ignored path="mydms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +48,18 @@
       <file leaf-file-name="edit.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/wiki/edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="773">
-              <caret line="46" column="109" selection-start-line="46" selection-start-column="109" selection-end-line="46" selection-end-column="109" />
+            <state relative-caret-position="541">
+              <caret line="38" column="85" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="153" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wiki_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Wiki_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1682">
+              <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -63,8 +68,8 @@
       <file leaf-file-name="viewwiki.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/wiki/viewwiki.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="1218">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -153,13 +158,13 @@
         <option value="$PROJECT_DIR$/application/config/db_tables.php" />
         <option value="$PROJECT_DIR$/application/models/File_model.php" />
         <option value="$PROJECT_DIR$/application/views/wrapper.php" />
-        <option value="$PROJECT_DIR$/application/models/Wiki_model.php" />
         <option value="$PROJECT_DIR$/application/views/footer.php" />
         <option value="$PROJECT_DIR$/application/views/wiki/add.php" />
         <option value="$PROJECT_DIR$/application/views/header.php" />
         <option value="$PROJECT_DIR$/application/views/wiki/view.php" />
-        <option value="$PROJECT_DIR$/application/views/wiki/viewwiki.php" />
         <option value="$PROJECT_DIR$/application/controllers/Wiki.php" />
+        <option value="$PROJECT_DIR$/application/models/Wiki_model.php" />
+        <option value="$PROJECT_DIR$/application/views/wiki/viewwiki.php" />
         <option value="$PROJECT_DIR$/application/views/wiki/edit.php" />
       </list>
     </option>
@@ -291,6 +296,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -380,12 +403,12 @@
       <workItem from="1469521840370" duration="1594000" />
       <workItem from="1469524154119" duration="15378000" />
       <workItem from="1469608587374" duration="19929000" />
-      <workItem from="1469694466183" duration="10712000" />
+      <workItem from="1469694466183" duration="11726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58649000" />
+    <option name="totallyTimeSpent" value="59663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="2560" extended-state="6" />
@@ -726,14 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Wiki_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -768,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/wiki/viewwiki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Wiki.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1628">
@@ -784,10 +791,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Wiki_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1682">
+          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/wiki/viewwiki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/wiki/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="46" column="109" selection-start-line="46" selection-start-column="109" selection-end-line="46" selection-end-column="109" />
+        <state relative-caret-position="541">
+          <caret line="38" column="85" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="153" />
           <folding />
         </state>
       </provider>

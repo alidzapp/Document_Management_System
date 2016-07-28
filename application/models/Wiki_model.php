@@ -43,7 +43,9 @@ class Wiki_model extends CI_Model
     {
 
         $this->title = $this->input->post('title', true);
-        $this->content = $this->input->post('content', true);
+        $this->config->set_item('global_xss_filtering', FALSE);
+        $this->content = $this->input->post('content');
+        $this->config->set_item('global_xss_filtering', TRUE);
         $this->department_id = $this->input->post('department_id', true);
 
         $this->db->insert($this->config->item('wiki_table'), $this);
@@ -53,7 +55,9 @@ class Wiki_model extends CI_Model
     {
         $this->id = $this->input->post('id', true);
         $this->title = $this->input->post('title', true);
-        $this->content = $this->input->post('content', true);
+        $this->config->set_item('global_xss_filtering', FALSE);
+        $this->content = $this->input->post('content');
+        $this->config->set_item('global_xss_filtering', TRUE);
         $this->department_id = $this->input->post('department_id', true);
 
         $this->db->update($this->config->item('wiki_table'), $this, array('id' => $this->id));

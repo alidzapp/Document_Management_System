@@ -28,22 +28,19 @@
 
 
 <script>
-    HTML
-    CSS
-    JS
-    Result
-    Edit
-    on
+
     tinymce.init({
         selector: 'h2.editable',
         inline: true,
         toolbar: 'undo redo',
-        menubar: false
+        menubar: false,
+        readonly:true
     });
 
     tinymce.init({
         selector: 'div.editable',
         inline: true,
+        readonly:true,
         plugins: [
             'advlist autolink lists link image charmap print preview anchor',
             'searchreplace visualblocks code fullscreen',

@@ -36,7 +36,7 @@
                                             <option value="">--Choose Department--</option>
                                             <?php foreach ($departments as $rowd) { ?>
                                                 <option
-                                                    value="<?php echo $rowd->id; ?>"><?php echo $rowd->name; ?></option>
+                                                    value="<?php echo $rowd->id; ?>" <?php if($rowd->id==$row->department_id){ ?>selected="true"<?php }?> ><?php echo $rowd->name; ?></option>
                                             <?php } ?>
                                         </select></td>
                                     <td>
