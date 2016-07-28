@@ -54,7 +54,9 @@ function get_name_from_id($data, $id)
                                         <button type="button" class="btn btn-primary" onclick="window.location.href='/user/edit/<?php echo $row->id;?>'">Edit</button>
                                     </td>
                                     <td>
+                                        <?php if($row->role_id!=2){?>
                                         <button type="button" class="btn btn-danger" onclick="confirm_first(<?php echo $row->id;?>);">Delete</button>
+                                        <?php }?>
 
                                     </td>
                                 </tr>
