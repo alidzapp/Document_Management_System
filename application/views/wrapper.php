@@ -44,10 +44,10 @@
                         <p>Access Control</p>
                     </a>
                 </li>
-                <li>
-                    <a href="/mydms/view">
+                <li <?php if($page_name=="wiki"){ ?>class="active"<?php } ?>>
+                    <a href="/wiki/view">
                         <i class="pe-7s-note2"></i>
-                        <p>Documents</p>
+                        <p>Wiki</p>
                     </a>
                 </li>
 
