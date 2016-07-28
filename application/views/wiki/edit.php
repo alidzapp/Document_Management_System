@@ -12,19 +12,9 @@
                     <div class="content table-responsive table-full-width">
 
                         <table class="table table-hover table-striped">
-                            <thead>
-                            <th>ID</th>
-                            <th>Title</th>
-                            <th>Department</th>
-                            <th>Wiki</th>
-                            <th width="5%">&nbsp</th>
-                            <th width="5%">&nbsp;</th>
-                            </thead>
                             <tbody>
                             <?php
-                            /*echo "<pre>";
-                            var_dump($query);
-                            echo "</pre>";*/
+
                             foreach ($query as $row) {
 
                             ?>
@@ -33,8 +23,15 @@
                                 <input type="hidden" name="id" value="<?php echo $row->id; ?>">
 
                                 <tr>
+                                    <th>ID</th>
                                     <td><?php echo $row->id; ?></td>
+                                </tr>
+                                <tr>
+                                    <th>Title</th>
                                     <td><input value="<?php echo $row->title; ?>" name="title" required="true"></td>
+                                </tr>
+                                <tr>
+                                    <th>Department</th>
                                     <td><select required="true" name="department_id" class="selectpicker form-control">
                                             <option value="">--Choose Department--</option>
                                             <?php foreach ($departments as $rowd) { ?>
@@ -43,14 +40,21 @@
                                             <?php } ?>
                                         </select></td>
                                     <td>
-                                    <td><input value="<?php echo $row->content; ?>" name="content" required="true"></td>
-                                    <td>
+                                </tr>
+                                <tr>
+
+                                    <th>Wiki</th>
+                                    <td><textarea id="mytextarea" name="content"><?php echo $row->content; ?></textarea>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
 
                                         <button type="submit" class="btn btn-secondary">
-                                            Submit
+                                            Save
                                         </button>
                                     </td>
-                                    <td>&nbsp;</td>
+
                                 </tr>
                                 <?php
                                 }
@@ -67,5 +71,30 @@
         </div>
     </div>
 </div>
+
+<script>
+    tinymce.init({
+        selector: '#mytextarea',
+        height: 500,
+        theme: 'modern',
+        plugins: [
+            'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            'searchreplace wordcount visualblocks visualchars code fullscreen',
+            'insertdatetime media nonbreaking save table contextmenu directionality',
+            'emoticons template paste textcolor colorpicker textpattern imagetools'
+        ],
+        toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons',
+        image_advtab: true,
+        templates: [
+            {title: 'Test template 1', content: 'Test 1'},
+            {title: 'Test template 2', content: 'Test 2'}
+        ],
+        content_css: [
+            '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+            '//www.tinymce.com/css/codepen.min.css'
+        ]
+    });
+</script>
 
 

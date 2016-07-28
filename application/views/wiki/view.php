@@ -58,7 +58,11 @@ function get_name_from_id($data, $id)
                                     <td><?php echo $row->id; ?></td>
                                     <td><?php echo $row->title; ?></td>
                                     <td><?php echo get_name_from_id($departments, $row->department_id); ?></td>
-                                    <td><?php echo $row->content; ?></td>
+                                    <td>
+                                        <button type="button" class="btn btn-info"
+                                                onclick="window.location.href='/wiki/viewwiki/<?php echo $row->id; ?>'">View
+                                        </button>
+                                    </td>
                                     <td>
                                         <button type="button" class="btn btn-primary"
                                                 onclick="window.location.href='/wiki/edit/<?php echo $row->id; ?>'">Edit

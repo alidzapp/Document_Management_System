@@ -56,6 +56,24 @@ class Wiki extends CI_Controller
 
     }
 
+    public function viewwiki()
+    {
+
+
+        $data['departments'] = $this->Department_model->get_entries(1000, 0);
+
+        $id = $this->uri->segment('3');
+        $data['query'] = $this->Wiki_model->get_entry_by_id($id);
+
+
+        $this->load->view('header');
+        $this->load->view('wrapper', $this->utilities);
+        $this->load->view('wiki/viewwiki', $data);
+        $this->load->view('footer');
+
+
+    }
+
     public function edit()
     {
 
@@ -77,7 +95,7 @@ class Wiki extends CI_Controller
     {
 
         $data['query'] = $this->Wiki_model->update_entry();
-        redirect('wiki/view');
+        redirect('wiki/viewwiki/'.$_POST["id"]);
     }
 
     public function add_exec()

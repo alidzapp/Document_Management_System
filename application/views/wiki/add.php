@@ -1,59 +1,84 @@
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Add Wiki</h4>
+                    </div>
+                    <div class="content table-responsive table-full-width">
 
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="header">
-                            <h4 class="title">Add Wiki</h4>
-                        </div>
-                        <div class="content table-responsive table-full-width">
-
-                            <table class="table table-hover table-striped">
-                                <thead>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Department</th>
-                                <th>Wiki</th>
-                                <th width="5%">&nbsp</th>
-                                <th width="5%">&nbsp;</th>
-                                </thead>
+                        <table class="table table-hover table-striped">
+                            <form action="/wiki/add_exec" method="post">
+                                <input type="hidden" name="id" value="0">
                                 <tbody>
 
-                                <form action="/wiki/add_exec" method="post">
-                                    <input type="hidden" name="id" value="0">
+                                <tr>
+                                    <td>Title</td>
+                                    <td><input value="" name="title" required="true"></td>
+                                </tr>
+                                <tr>
+                                    <td>Department</td>
+                                    <td><select required="true" name="department_id" class="selectpicker form-control">
+                                            <option value="">--Choose Department--</option>
+                                            <?php foreach ($departments as $row) { ?>
+                                                <option
+                                                    value="<?php echo $row->id; ?>"><?php echo $row->name; ?></option>
+                                            <?php } ?>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Wiki</td>
+                                    <td>
+                                        <textarea id="mytextarea" name="content"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
 
-                                    <tr>
-                                        <td>?</td>
-                                        <td><input value="" name="title" required="true"></td>
-                                        <td><select required="true" name="department_id" class="selectpicker form-control">
-                                                <option value="">--Choose Department--</option>
-                                                <?php foreach ($departments as $row) { ?>
-                                                    <option
-                                                        value="<?php echo $row->id; ?>"><?php echo $row->name; ?></option>
-                                                <?php } ?>
-                                            </select></td>
-                                        <td>
-                                        <td><input value="" name="content" required="true"></td>
-                                        <td>
+                                        <button type="submit" class="btn btn-secondary">
+                                            Submit
+                                        </button>
+                                    </td>
 
-                                            <button type="submit" class="btn btn-secondary">
-                                                Submit
-                                            </button>
-                                        </td>
-                                        <td>&nbsp;</td>
-                                    </tr>
+                                </tr>
 
-                                </form>
+
                                 </tbody>
-                            </table>
+                            </form>
+                        </table>
 
-                        </div>
                     </div>
                 </div>
-
-
             </div>
+
+
         </div>
     </div>
+</div>
+<script>
+    tinymce.init({
+        selector: '#mytextarea',
+        height: 500,
+        theme: 'modern',
+        plugins: [
+            'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+            'searchreplace wordcount visualblocks visualchars code fullscreen',
+            'insertdatetime media nonbreaking save table contextmenu directionality',
+            'emoticons template paste textcolor colorpicker textpattern imagetools'
+        ],
+        toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons',
+        image_advtab: true,
+        templates: [
+            {title: 'Test template 1', content: 'Test 1'},
+            {title: 'Test template 2', content: 'Test 2'}
+        ],
+        content_css: [
+            '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+            '//www.tinymce.com/css/codepen.min.css'
+        ]
+    });
+</script>
 
