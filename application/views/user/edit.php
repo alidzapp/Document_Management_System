@@ -7,20 +7,15 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">User</h4>
+                        <h4 class="title">Edit User</h4>
                     </div>
                     <div class="content table-responsive table-full-width">
 
                         <table class="table table-hover table-striped">
                             <thead>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            </thead>
-                            <thead>
                             <th>ID</th>
                             <th>Username</th>
+                            <th>Role</th>
                             <th width="5%">&nbsp</th>
                             <th width="5%">&nbsp;</th>
                             </thead>
@@ -34,10 +29,19 @@
                                 <tr>
                                     <td><?php echo $row->id; ?></td>
                                     <td><input type="email" value="<?php echo $row->username; ?>" name="username" required="true"></td>
+                                    <td><select required="true" name="role_id" class="selectpicker form-control">
+                                            <option value="">--Choose Role--</option>
+                                            <?php foreach ($roles as $rowd) { ?>
+                                                <option
+                                                    value="<?php echo $rowd->id; ?>"
+                                                    <?php if ($rowd->id == $row->role_id){ ?>selected="true"<?php } ?> ><?php echo $rowd->name; ?></option>
+                                            <?php } ?>
+                                        </select>
+                                    <td>
                                     <td>
 
                                         <button type="submit" class="btn btn-secondary">
-                                            Submit
+                                            Save
                                         </button>
                                     </td>
                                     <td>&nbsp;</td>

@@ -1,5 +1,19 @@
 <?php
-//var_dump($query);
+
+function get_name_from_id($data, $id)
+{
+
+    if (is_array($data) || is_object($data)) {
+        foreach ($data as $rowx) {
+
+            if ($id == $rowx->id) {
+                return $rowx->name;
+            }
+        }
+    }
+    return "";
+}
+
 ?>
 <div class="content">
     <div class="container-fluid">
@@ -16,6 +30,7 @@
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>
+                            <th>&nbsp;</th>
                             <th>
                                 <button type="button" class="btn btn-success" onclick="window.location.href='/user/add'">Add User</button>
                             </th>
@@ -23,6 +38,7 @@
                             <thead>
                             <th>ID</th>
                             <th>Username</th>
+                            <th>Role</th>
                             <th width="5%">&nbsp</th>
                             <th width="5%">&nbsp;</th>
                             </thead>
@@ -33,6 +49,7 @@
                                 <tr>
                                     <td><?php echo $row->id; ?></td>
                                     <td><?php echo $row->username; ?></td>
+                                    <td><?php echo get_name_from_id($roles,$row->role_id)?></td>
                                     <td>
                                         <button type="button" class="btn btn-primary" onclick="window.location.href='/user/edit/<?php echo $row->id;?>'">Edit</button>
                                     </td>

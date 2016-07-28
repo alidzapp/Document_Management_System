@@ -43,6 +43,7 @@ class User_model extends CI_Model
     public function insert_entry()
     {
         $this->username = $this->input->post('username', true);
+        $this->role_id = $this->input->post('role_id', true);
         $this->is_active = 1;
 
 
@@ -51,6 +52,7 @@ class User_model extends CI_Model
 
     public function update_entry()
     {
+        $this->role_id = $this->input->post('role_id', true);
         $this->username = $this->input->post('username', true);
         $this->is_active = 1;
 

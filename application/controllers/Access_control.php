@@ -61,8 +61,16 @@ class Access_control extends CI_Controller
     public function add_exec()
     {
 
-        $data['query'] = $this->Access_control_model->insert_entry();
-        redirect('access_control/view');
+       try {
+           $data['query'] = $this->Access_control_model->insert_entry();
+       }
+       catch (Exception $e) {
+           echo 'Caught exception: ',  $e->getMessage(), "\n";
+       }
+       finally{
+           redirect('access_control/view');
+       }
+
     }
 
     public function delete_exec()

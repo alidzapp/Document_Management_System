@@ -34,13 +34,13 @@
         inline: true,
         toolbar: 'undo redo',
         menubar: false,
-        readonly:true
+        readonly: true
     });
 
     tinymce.init({
         selector: 'div.editable',
         inline: true,
-        readonly:true,
+        readonly: true,
         plugins: [
             'advlist autolink lists link image charmap print preview anchor',
             'searchreplace visualblocks code fullscreen',

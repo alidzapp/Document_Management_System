@@ -17,7 +17,7 @@
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>
                             <th>
-                                <button type="button" class="btn btn-success" onclick="window.location.href='/role/add'">Add Role</button>
+                                <!--button-- type="button" class="btn btn-success" onclick="window.location.href='/role/add'">Add Role</button-->
                             </th>
                             </thead>
                             <thead>
@@ -34,10 +34,10 @@
                                     <td><?php echo $row->id; ?></td>
                                     <td><?php echo $row->name; ?></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary" onclick="window.location.href='/role/edit/<?php echo $row->id;?>'">Edit</button>
+                                        <!--button type="button" class="btn btn-primary" onclick="window.location.href='/role/edit/<?php echo $row->id;?>'">Edit</button-->
                                     </td>
                                     <td>
-                                        <button type="button" class="btn btn-danger" onclick="confirm_first(<?php echo $row->id;?>);">Delete</button>
+                                        <!--button type="button" class="btn btn-danger" onclick="confirm_first(<?php echo $row->id;?>);">Delete</button-->
 
                                     </td>
                                 </tr>

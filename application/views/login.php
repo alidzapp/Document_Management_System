@@ -32,7 +32,8 @@ if ($gClient->getAccessToken()) {
     $_SESSION['google_data'] = $userProfile; // Storing Google User Data in Session
 
     $_SESSION['token'] = $gClient->getAccessToken();
-    if ($gUser->isUserAuthenticatedForSystemUse($userProfile['email'])) {
+    $authenticator=$gUser->isUserAuthenticatedForSystemUse($userProfile['email']);
+    if ($authenticator!=false) {
         header("location: index.php");
     } else {
         header("location:/logout?Message=NOT_AUTHORISED");

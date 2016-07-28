@@ -57,13 +57,19 @@ class Access_control_model extends CI_Model
 
     public function insert_entry()
     {
-        $this->user_id = $this->input->post('user_id', true);
-        $this->role_id = $this->input->post('role_id', true);
-        $this->department_id = $this->input->post('department_id', true);
+        try {
+            $this->user_id = $this->input->post('user_id', true);
+            $this->role_id = $this->input->post('role_id', true);
+            $this->department_id = $this->input->post('department_id', true);
 
-        $this->db->insert($this->config->item('access_control_table'), $this);
+            $this->db->insert($this->config->item('access_control_table'), $this);
+        }
+        catch (Exception $e) {
+            //throw $e;
+            echo "error";
+        }
 
-        echo $this->db->last_query();
+        //echo $this->db->last_query();
     }
 
     public function update_entry()

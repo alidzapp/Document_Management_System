@@ -16,6 +16,7 @@ class User extends CI_Controller
             redirect('/login/', 'location');
         }
         $this->load->model('User_model');
+        $this->load->model('Role_model');
         $this->utilities["page_name"]="user";
 
 
@@ -27,6 +28,7 @@ class User extends CI_Controller
 
 
         $data['query'] = $this->User_model->get_entries(100, 0);
+        $data['roles'] = $this->Role_model->get_entries(1000, 0);
 
 
         $this->load->view('header');
@@ -43,6 +45,8 @@ class User extends CI_Controller
 
         $id = $this->uri->segment('3');
         $data['query'] = $this->User_model->get_entry_by_id($id);
+        $data['roles'] = $this->Role_model->get_entries(1000, 0);
+
         $this->load->view('header');
         $this->load->view('wrapper',$this->utilities);
         $this->load->view('user/edit', $data);
@@ -55,9 +59,12 @@ class User extends CI_Controller
     {
 
 
+        $data['roles'] = $this->Role_model->get_entries(1000, 0);
+
+
         $this->load->view('header');
         $this->load->view('wrapper',$this->utilities);
-        $this->load->view('user/add');
+        $this->load->view('user/add',$data);
         $this->load->view('footer');
 
 

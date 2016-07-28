@@ -33,7 +33,7 @@ class Users {
 	}
 	function isUserAuthenticatedForSystemUse($email){
 
-		$sql_query="SELECT * FROM ".$this->user_table_Name." WHERE username = '".$email."'";
+		$sql_query="SELECT * FROM ".$this->user_table_Name." WHERE username = '".$email."' and is_active=1";
 		//echo $sql_query;
 
 		$prevQuery = mysqli_query($this->connect,$sql_query) or die(mysqli_error($this->connect));
@@ -41,7 +41,11 @@ class Users {
 		//echo mysqli_num_rows($prevQuery);
 		//return true;
 		if(mysqli_num_rows($prevQuery) > 0 && count(mysqli_num_rows($prevQuery)) ==1) {
-			return true;
+			$row =mysqli_fetch_row($prevQuery);
+			if(isset($row)){
+				return $row;
+			}
+
 		}
 		return false;
 	}
