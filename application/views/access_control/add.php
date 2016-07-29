@@ -22,7 +22,7 @@
                                 <input type="hidden" name="id" value="0">
                                 <tr>
                                     <td>?</td>
-                                    <td><select required="true" name="user_id" class="selectpicker form-control">
+                                    <td><select  required="true" name="user_id" class="selectpicker form-control">
                                             <option value="">--Choose User--</option>
                                             <?php foreach ($users as $row) { ?>
                                                 <option

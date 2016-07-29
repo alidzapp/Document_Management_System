@@ -26,6 +26,12 @@
                         <p>User</p>
                     </a>
                 </li>
+                <li <?php if($page_name=="group"){ ?>class="active"<?php } ?>>
+                    <a href="/group/view">
+                        <i class="pe-7s-users"></i>
+                        <p>Group</p>
+                    </a>
+                </li>
                 <li <?php if($page_name=="role"){ ?>class="active"<?php } ?>>
                     <a href="/role/view">
                         <i class="pe-7s-news-paper"></i>
@@ -40,7 +46,7 @@
                 </li>
                 <li <?php if($page_name=="access_control"){ ?>class="active"<?php } ?>>
                     <a href="/access_control/view">
-                        <i class="pe-7s-user"></i>
+                        <i class="pe-7s-door-lock"></i>
                         <p>Access Control</p>
                     </a>
                 </li>

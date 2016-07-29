@@ -19,10 +19,9 @@
 
     <!--  Light Bootstrap Table core CSS    -->
     <link href="/assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    <!--link href="/assets/css/bootstrap-select.min.css" rel="stylesheet"/-->
 
 
-    <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="/assets/css/demo.css" rel="stylesheet"/>
 
 
     <!--     Fonts and icons     -->
@@ -31,7 +30,13 @@
     <link href="/assets/css/pe-icon-7-stroke.css" rel="stylesheet"/>
 
     <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
-<style>
+
+    <!--   Core JS Files   -->
+    <script src="/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--script src="/assets/js/bootstrap-select.js" type="text/javascript"></script-->
+
+    <style>
 
     div.editable, h2.editable{
         overflow: visible;

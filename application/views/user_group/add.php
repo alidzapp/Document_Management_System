@@ -1,50 +1,43 @@
-<?php
-//var_dump($query);
-?>
 <div class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Role</h4>
+                        <h4 class="title">Add User to <b><?php echo $group->name;?></b></h4>
                     </div>
                     <div class="content table-responsive table-full-width">
 
                         <table class="table table-hover table-striped">
                             <thead>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            </thead>
-                            <thead>
                             <th>ID</th>
-                            <th>Name</th>
+                            <th>Username</th>
                             <th width="5%">&nbsp</th>
                             <th width="5%">&nbsp;</th>
                             </thead>
                             <tbody>
-                            <?php
-                            foreach ($query as $row) {
-                            ?>
-                            <form action="/role/edit_exec" method="post">
-                                <input type="hidden" name="id" value="<?php echo $row->id; ?>">
 
+                            <form action="/user_group/add_exec" method="post">
+                                <input type="hidden" name="id" value="0">
+                                <input type="hidden" name="group_id" value="<?php echo $group->id;?>">
                                 <tr>
-                                    <td><?php echo $row->id; ?></td>
-                                    <td><input value="<?php echo $row->name; ?>" name="name" required="true"></td>
+                                    <td>?</td>
+                                    <td><select  required="true" name="user_id" class="selectpicker form-control">
+                                            <option value="">--Choose User--</option>
+                                            <?php foreach ($users as $row) { ?>
+                                                <option
+                                                    value="<?php echo $row->id; ?>"><?php echo $row->username; ?></option>
+                                            <?php } ?>
+                                        </select></td>
                                     <td>
 
                                         <button type="submit" class="btn btn-secondary">
-                                            Save
+                                            Assign
                                         </button>
                                     </td>
                                     <td>&nbsp;</td>
                                 </tr>
-                                <?php
-                                }
-                                ?>
+
                             </form>
                             </tbody>
                         </table>
@@ -57,5 +50,4 @@
         </div>
     </div>
 </div>
-
 

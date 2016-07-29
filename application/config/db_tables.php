@@ -6,6 +6,8 @@ $config['user_table'] = 'user';
 $config['role_table'] = 'role';
 $config['access_control_table'] = 'access_control';
 $config['wiki_table'] = 'wiki';
+$config['group_table'] = 'group';
+$config['user_group_table'] = 'user_group';
 
 
 ?>
