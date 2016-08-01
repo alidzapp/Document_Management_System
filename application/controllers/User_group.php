@@ -34,7 +34,7 @@ class User_group extends CI_Controller
         $data['query'] = $this->User_group_model->get_entries_joined($group_id);
         $group = $this->Group_model->get_entry_by_id($group_id);
 
-        $data['group']=$group[0];
+        $data['group'] = $group[0];
 
         $this->load->view('header');
         $this->load->view('wrapper', $this->utilities);
@@ -48,12 +48,12 @@ class User_group extends CI_Controller
     public function add()
     {
 
-
-        $data['users'] = $this->User_model->get_entries(1000, 0);
-
         $group_id = $this->uri->segment('3');
+        $data['users'] = $this->User_group_model->get_entries_outer_joined($group_id);
+
+
         $group = $this->Group_model->get_entry_by_id($group_id);
-        $data['group']=$group[0];
+        $data['group'] = $group[0];
 
         $this->load->view('header');
         $this->load->view('wrapper', $this->utilities);
@@ -72,7 +72,7 @@ class User_group extends CI_Controller
         } catch (Exception $e) {
             echo 'Caught exception: ', $e->getMessage(), "\n";
         } finally {
-            redirect('user_group/view/'.$_POST["group_id"]);
+            redirect('user_group/view/' . $_POST["group_id"]);
         }
 
     }
@@ -84,10 +84,10 @@ class User_group extends CI_Controller
         $id = $this->uri->segment('3');
 
 
-        $user_group= $this->User_group_model->get_entry_by_id($id);
+        $user_group = $this->User_group_model->get_entry_by_id($id);
 
         $data['query'] = $this->User_group_model->row_delete($id);
-        redirect('user_group/view/'.$user_group->group_id);
+        redirect('user_group/view/' . $user_group->group_id);
     }
 
 }

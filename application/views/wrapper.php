@@ -16,7 +16,7 @@
                 <li <?php if($page_name=="main"){ ?>class="active"<?php } ?>>
                     <a href="/mydms/view">
                         <i class="pe-7s-user"></i>
-                        <p>User Profile</p>
+                        <p>Your Profile</p>
                     </a>
                 </li>
 

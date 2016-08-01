@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Group Users:<b><?php echo $group->name;?></b></h4>
+                        <h4 class="title">Group Users:<b><?php echo $group->name; ?></b></h4>
                     </div>
                     <div class="content table-responsive table-full-width">
 
@@ -15,10 +15,16 @@
                             <thead>
                             <th>&nbsp;</th>
                             <th>&nbsp;</th>
-                            <th>&nbsp;</th>
+
                             <th>
                                 <button type="button" class="btn btn-success"
-                                        onclick="window.location.href='/user_group/add/<?php echo $group->id;?>'">Add User to <?php echo $group->name;?>
+                                        onclick="window.location.href='/user_group/add/<?php echo $group->id; ?>'">Add
+                                    User to <?php echo $group->name; ?>
+                                </button>
+                            </th>
+                            <th>
+                                <button type="button" class="btn btn-success"
+                                        onclick="window.location.href='/group/view/'">Back to Groups
                                 </button>
                             </th>
                             </thead>

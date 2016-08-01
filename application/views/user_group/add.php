@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Add User to <b><?php echo $group->name;?></b></h4>
+                        <h4 class="title">Add User to <b><?php echo $group->name; ?></b></h4>
                     </div>
                     <div class="content table-responsive table-full-width">
 
@@ -19,10 +19,11 @@
 
                             <form action="/user_group/add_exec" method="post">
                                 <input type="hidden" name="id" value="0">
-                                <input type="hidden" name="group_id" value="<?php echo $group->id;?>">
+                                <input type="hidden" name="group_id" value="<?php echo $group->id; ?>">
                                 <tr>
                                     <td>?</td>
-                                    <td><select  required="true" name="user_id" class="selectpicker form-control">
+                                    <td><select multiple required="true" name="user_id[]"
+                                                class="selectpicker form-control">
                                             <option value="">--Choose User--</option>
                                             <?php foreach ($users as $row) { ?>
                                                 <option
@@ -33,6 +34,11 @@
 
                                         <button type="submit" class="btn btn-secondary">
                                             Assign
+                                        </button>
+                                        <br><br>
+                                        <button type="button" class="btn btn-secondary"
+                                                onclick="window.location.href='/user_group/view/<?php echo $group->id; ?>'">
+                                            &nbsp;&nbsp;Back&nbsp;&nbsp;
                                         </button>
                                     </td>
                                     <td>&nbsp;</td>

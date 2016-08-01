@@ -25,7 +25,7 @@
                             </thead>
                             <thead>
                             <th>ID</th>
-                            <th>Username</th>
+                            <th>Group</th>
                             <th>Department</th>
                             <th width="5%">&nbsp</th>
                             <th width="5%">&nbsp;</th>
@@ -39,7 +39,7 @@
                                 ?>
                                 <tr>
                                     <td><?php echo $row->id; ?></td>
-                                    <td><?php echo $row->user; ?></td>
+                                    <td><?php echo $row->group; ?></td>
                                     <td><?php echo $row->department; ?></td>
                                     <td>&nbsp;
                                     </td>

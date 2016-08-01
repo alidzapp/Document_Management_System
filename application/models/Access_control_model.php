@@ -5,7 +5,7 @@ class Access_control_model extends CI_Model
 
 
     public $id;
-    public $user_id;
+    public $group_id;
     public $department_id;
 
 
@@ -31,10 +31,10 @@ class Access_control_model extends CI_Model
 
         $main_t = $this->config->item('access_control_table');
 
-        //$this->db->select(" " . $main_t . ".id as id,   " . $this->config->item('user_table') . ".username as user, " . $this->config->item('role_table') . ".name as role , " . $this->config->item('department_table') . ".name as department");
-        $this->db->select(" " . $main_t . ".id as id,   " . $this->config->item('user_table') . ".username as user,  " . $this->config->item('department_table') . ".name as department");
+        //$this->db->select(" " . $main_t . ".id as id,   " . $this->config->item('group_table') . ".username as user, " . $this->config->item('role_table') . ".name as role , " . $this->config->item('department_table') . ".name as department");
+        $this->db->select(" " . $main_t . ".id as id,   " . $this->config->item('group_table') . ".name as group,  " . $this->config->item('department_table') . ".name as department");
         $this->db->from($main_t);
-        $this->db->join($this->config->item('user_table'), $main_t . ".user_id = " . $this->config->item('user_table') . ".id", 'left');
+        $this->db->join($this->config->item('group_table'), $main_t . ".group_id = " . $this->config->item('group_table') . ".id", 'left');
         //$this->db->join($this->config->item('role_table'), $main_t . ".role_id = " . $this->config->item('role_table') . ".id", 'left');
         $this->db->join($this->config->item('department_table'), $main_t . ".department_id = " . $this->config->item('department_table') . ".id", 'left');
         $query = $this->db->get();
@@ -58,7 +58,7 @@ class Access_control_model extends CI_Model
     public function insert_entry()
     {
         try {
-            $this->user_id = $this->input->post('user_id', true);
+            $this->group_id = $this->input->post('group_id', true);
             //$this->role_id = $this->input->post('role_id', true);
             $this->department_id = $this->input->post('department_id', true);
 
@@ -74,7 +74,7 @@ class Access_control_model extends CI_Model
     public function update_entry()
     {
         $this->id = $this->input->post('id', true);
-        $this->user_id = $this->input->post('user_id', true);
+        $this->group_id = $this->input->post('group_id', true);
         //$this->role_id = $this->input->post('role_id', true);
         $this->department_id = $this->input->post('department_id', true);
 

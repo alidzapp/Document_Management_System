@@ -32,7 +32,7 @@ class User_group_model extends CI_Model
         $id = $this->uri->segment('3');
         $main_t = $this->config->item('user_group_table');
 
-        $st=$main_t.".group_id=".$id;
+        $st = $main_t . ".group_id=" . $id;
         //$this->db->select(" " . $main_t . ".id as id,   " . $this->config->item('user_table') . ".username as user, " . $this->config->item('role_table') . ".name as role , " . $this->config->item('department_table') . ".name as department");
         $this->db->select(" " . $main_t . ".id as id,   " . $this->config->item('user_table') . ".username as user,  " . $this->config->item('group_table') . ".name as group");
         $this->db->from($main_t);
@@ -41,6 +41,20 @@ class User_group_model extends CI_Model
         $this->db->join($this->config->item('group_table'), $main_t . ".group_id = " . $this->config->item('group_table') . ".id", 'left');
         $this->db->where($st, NULL, FALSE);
         $query = $this->db->get();
+        //echo $this->db->last_query();
+        return $query->result();
+    }
+
+    public function get_entries_outer_joined($id)
+    {
+
+        $id = $this->uri->segment('3');
+        $main_t = $this->config->item('user_table');
+        $main_t2 = $this->config->item('user_group_table');
+
+        $SQL = "SELECT `" . $main_t . "`.* from `" . $main_t . "` where `" . $main_t . "`.id not in (select user_id from " . $main_t2 . " where group_id=" . $id . ")";
+        $query = $this->db->query($SQL);
+
         //echo $this->db->last_query();
         return $query->result();
     }
@@ -61,11 +75,12 @@ class User_group_model extends CI_Model
     public function insert_entry()
     {
         try {
-            $this->user_id = $this->input->post('user_id', true);
-            //$this->role_id = $this->input->post('role_id', true);
-            $this->group_id = $this->input->post('group_id', true);
-
-            $this->db->insert($this->config->item('user_group_table'), $this);
+            foreach ($this->input->post('user_id') as $user_id) {
+                //echo $user_id."<br>";
+                $this->user_id = $user_id;
+                $this->group_id = $this->input->post('group_id', true);
+                $this->db->insert($this->config->item('user_group_table'), $this);
+            }
         } catch (Exception $e) {
             //throw $e;
             echo "error";

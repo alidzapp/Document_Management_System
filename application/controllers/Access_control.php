@@ -16,7 +16,7 @@ class Access_control extends CI_Controller
             redirect('/login/', 'location');
         }
         $this->load->model('Access_control_model');
-        $this->load->model('User_model');
+        $this->load->model('Group_model');
 
         $this->load->model('Department_model');
 
@@ -46,7 +46,7 @@ class Access_control extends CI_Controller
     {
 
 
-        $data['users'] = $this->User_model->get_entries(1000, 0);
+        $data['groups'] = $this->Group_model->get_entries(1000, 0);
         $data['departments'] = $this->Department_model->get_entries(1000, 0);
 
         $this->load->view('header');
