@@ -50,8 +50,8 @@
 </style>
 </head>
 <body>
-<pre>
+<!--pre-->
 <?php
-var_dump($_SESSION);
+//var_dump($_SESSION);
 ?>
-</pre>
+<!--/pre-->

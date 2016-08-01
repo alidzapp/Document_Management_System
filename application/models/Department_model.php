@@ -36,6 +36,17 @@ class Department_model extends CI_Model
         $query = $this->db->get_where($this->config->item('department_table'), array('id' => $id));
         return $query->result();
     }
+    public function get_entry_by_ids($arr)
+    {
+
+        /*$query = $this->db->get_where($this->config->item('department_table'), array('id' => $id));
+        return $query->result();*/
+
+        $this->db->select("*");
+        $this->db->where_in('id', $arr);
+        $query=$this->db->get($this->config->item('department_table'));
+        return $query->result();
+    }
 
     public function insert_entry()
     {

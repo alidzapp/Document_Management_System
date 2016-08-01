@@ -40,11 +40,13 @@ class Users
     {
 
         //$sql_query="SELECT * FROM ".$this->user_table_Name." WHERE username = '".$email."' and is_active=1";
-        $sql_query = "SELECT `user`.id as user,`user`.username as  username, user_group.group_id as `group` , access_control.department_id as department"
+        $sql_query = "SELECT `user`.id as user,`user`.username as  username, user_group.group_id as `group` , access_control.department_id as department, role.id as role"
             . " FROM"
             . " `user`"
             . " INNER JOIN"
             . " user_group ON `user`.id = user_group.user_id"
+            . " INNER JOIN"
+            . " role on user.role_id=role.id"
             . " INNER JOIN"
             . " access_control ON user_group.group_id = access_control.group_id"
             . " WHERE"
@@ -57,7 +59,8 @@ class Users
             $ret_array = array();
             while ($row = mysqli_fetch_row($prevQuery)) {
                 if (isset($row)) {
-                    array_push($ret_array, $row);
+                    $arr=array("user_id"=>$row[0],"username"=>$row[1],"group"=>$row[2],"department"=>$row[3],"role"=>$row[4]);
+                    array_push($ret_array, $arr);
 
                 }
             }

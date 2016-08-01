@@ -45,8 +45,17 @@ class Wiki extends CI_Controller
     public function add()
     {
 
+        $department_array = array();
+        foreach ($_SESSION["authenticator"] as $privilige) {
+            array_push($department_array, $privilige["department"]);
 
-        $data['departments'] = $this->Department_model->get_entries(1000, 0);
+        }
+
+
+        $data['departments'] = $this->Department_model->get_entry_by_ids($department_array);
+
+        //$data['departments'] = $this->Department_model->get_entries(1000, 0);
+
 
         $this->load->view('header');
         $this->load->view('wrapper', $this->utilities);
@@ -95,7 +104,7 @@ class Wiki extends CI_Controller
     {
 
         $data['query'] = $this->Wiki_model->update_entry();
-        redirect('wiki/viewwiki/'.$_POST["id"]);
+        redirect('wiki/viewwiki/' . $_POST["id"]);
     }
 
     public function add_exec()
