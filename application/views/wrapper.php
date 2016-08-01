@@ -13,44 +13,52 @@
 
             <ul class="nav">
 
-                <li <?php if($page_name=="main"){ ?>class="active"<?php } ?>>
+                <li <?php if ($page_name == "main"){ ?>class="active"<?php } ?>>
                     <a href="/mydms/view">
                         <i class="pe-7s-user"></i>
                         <p>Your Profile</p>
                     </a>
                 </li>
 
-                <li <?php if($page_name=="user"){ ?>class="active"<?php } ?>>
+                <?php
+                $privilige = 0;
+                if (isset($_SESSION["authenticator"])) {
+                    $privilige = $_SESSION["authenticator"][0];
+                }
+                if ($privilige["role"] == 2) {
+                ?>
+                <li <?php if ($page_name == "user"){ ?>class="active"<?php } ?>>
                     <a href="/user/view">
                         <i class="pe-7s-user"></i>
                         <p>User</p>
                     </a>
                 </li>
-                <li <?php if($page_name=="group"){ ?>class="active"<?php } ?>>
+                <li <?php if ($page_name == "group"){ ?>class="active"<?php } ?>>
                     <a href="/group/view">
                         <i class="pe-7s-users"></i>
                         <p>Group</p>
                     </a>
                 </li>
-                <li <?php if($page_name=="role"){ ?>class="active"<?php } ?>>
+                <!--li <?php if ($page_name == "role"){ ?>class="active"<?php } ?>>
                     <a href="/role/view">
                         <i class="pe-7s-news-paper"></i>
                         <p>Role</p>
                     </a>
-                </li>
-                <li <?php if($page_name=="department"){ ?>class="active"<?php } ?>>
+                </li-->
+                <li <?php if ($page_name == "department"){ ?>class="active"<?php } ?>>
                     <a href="/department/view">
                         <i class="pe-7s-science"></i>
                         <p>Departemts</p>
                     </a>
                 </li>
-                <li <?php if($page_name=="access_control"){ ?>class="active"<?php } ?>>
+                <li <?php if ($page_name == "access_control"){ ?>class="active"<?php } ?>>
                     <a href="/access_control/view">
                         <i class="pe-7s-door-lock"></i>
                         <p>Security Groups</p>
                     </a>
                 </li>
-                <li <?php if($page_name=="wiki"){ ?>class="active"<?php } ?>>
+                <?php }?>
+                <li <?php if ($page_name == "wiki"){ ?>class="active"<?php } ?>>
                     <a href="/wiki/view">
                         <i class="pe-7s-note2"></i>
                         <p>Wiki</p>
@@ -65,7 +73,8 @@
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#navigation-example-2">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
