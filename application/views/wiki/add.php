@@ -23,7 +23,7 @@
                                             <option value="">--Choose Department--</option>
                                             <?php foreach ($departments as $row) { ?>
                                                 <option
-                                                    value="<?php echo $row->id; ?>"><?php echo $row->name; ?></option>
+                                                    value="<?php echo $row->id; ?>" <?php if(count($departments)==1){?>selected<?php }?> ><?php echo $row->name; ?></option>
                                             <?php } ?>
                                         </select>
                                     </td>

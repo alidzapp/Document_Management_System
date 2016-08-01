@@ -28,9 +28,16 @@ class Wiki extends CI_Controller
     public function view()
     {
 
+        $department_array = array();
+        foreach ($_SESSION["authenticator"] as $privilige) {
+            array_push($department_array, $privilige["department"]);
 
-        $data['query'] = $this->Wiki_model->get_entries(100, 0);
-        $data['departments'] = $this->Department_model->get_entries(1000, 0);
+        }
+
+
+        $data['departments'] = $this->Department_model->get_entry_by_ids($department_array);
+
+        $data['query'] = $this->Wiki_model->get_entries(0, 0, $department_array);
 
 
         $this->load->view('header');
@@ -69,7 +76,14 @@ class Wiki extends CI_Controller
     {
 
 
-        $data['departments'] = $this->Department_model->get_entries(1000, 0);
+        $department_array = array();
+        foreach ($_SESSION["authenticator"] as $privilige) {
+            array_push($department_array, $privilige["department"]);
+
+        }
+
+
+        $data['departments'] = $this->Department_model->get_entry_by_ids($department_array);
 
         $id = $this->uri->segment('3');
         $data['query'] = $this->Wiki_model->get_entry_by_id($id);
@@ -87,7 +101,14 @@ class Wiki extends CI_Controller
     {
 
 
-        $data['departments'] = $this->Department_model->get_entries(1000, 0);
+        $department_array = array();
+        foreach ($_SESSION["authenticator"] as $privilige) {
+            array_push($department_array, $privilige["department"]);
+
+        }
+
+
+        $data['departments'] = $this->Department_model->get_entry_by_ids($department_array);
 
         $id = $this->uri->segment('3');
         $data['query'] = $this->Wiki_model->get_entry_by_id($id);
@@ -110,8 +131,8 @@ class Wiki extends CI_Controller
     public function add_exec()
     {
 
-        $data['query'] = $this->Wiki_model->insert_entry();
-        redirect('wiki/view');
+        $inserted_id = $this->Wiki_model->insert_entry();
+        redirect('wiki/viewwiki/' . $inserted_id);
     }
 
     public function delete_exec()

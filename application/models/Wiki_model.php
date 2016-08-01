@@ -23,8 +23,11 @@ class Wiki_model extends CI_Model
         return $query->result();
     }
 
-    public function get_entries($limit, $offset)
+    public function get_entries($limit, $offset, $departments)
     {
+        $this->db->select("*");
+        $this->db->where_in('department_id', $departments);
+
         if ($limit == 0 && $offset == 0) {
             $query = $this->db->get($this->config->item('wiki_table'));
         } else {
@@ -49,6 +52,10 @@ class Wiki_model extends CI_Model
         $this->department_id = $this->input->post('department_id', true);
 
         $this->db->insert($this->config->item('wiki_table'), $this);
+
+        $insert_id = $this->db->insert_id();
+
+        return $insert_id;
     }
 
     public function update_entry()
