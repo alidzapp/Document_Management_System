@@ -33,7 +33,9 @@ if ($gClient->getAccessToken()) {
 
     $_SESSION['token'] = $gClient->getAccessToken();
     $authenticator=$gUser->isUserAuthenticatedForSystemUse($userProfile['email']);
+    //var_dump($authenticator);
     if ($authenticator!=false) {
+        $_SESSION["authenticator"] = $authenticator;
         header("location: index.php");
     } else {
         header("location:/logout?Message=NOT_AUTHORISED");

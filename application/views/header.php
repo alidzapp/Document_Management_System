@@ -46,7 +46,12 @@
         min-height: auto;
         padding: inherit;
     }
-</style>
 
+</style>
 </head>
 <body>
+<pre>
+<?php
+var_dump($_SESSION);
+?>
+</pre>

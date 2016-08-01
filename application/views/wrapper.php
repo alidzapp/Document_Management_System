@@ -47,7 +47,7 @@
                 <li <?php if($page_name=="access_control"){ ?>class="active"<?php } ?>>
                     <a href="/access_control/view">
                         <i class="pe-7s-door-lock"></i>
-                        <p>Access Control</p>
+                        <p>Security Groups</p>
                     </a>
                 </li>
                 <li <?php if($page_name=="wiki"){ ?>class="active"<?php } ?>>
