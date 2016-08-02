@@ -5,7 +5,8 @@ class Department extends CI_Controller
 {
 
 
-    public  $utilities=array();
+    public $utilities = array();
+
     function __construct()
     {
         parent::__construct();
@@ -15,8 +16,7 @@ class Department extends CI_Controller
             redirect('/login/', 'location');
         }
         $this->load->model('Department_model');
-        $this->utilities["page_name"]="department";
-
+        $this->utilities["page_name"] = "department";
 
 
     }

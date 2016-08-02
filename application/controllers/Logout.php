@@ -20,11 +20,9 @@ class Logout extends CI_Controller
     {
 
 
-
         $clientId = '992715144010-nblabqfucupv3qii6unui1l220j2ii50.apps.googleusercontent.com'; //Google CLIENT ID
         $clientSecret = 'Z0P70eTYhAw6uoaFVtn_h8-p'; //Google CLIENT SECRET
         $redirectUrl = 'http://mydms.com/';  //return url (url to script)
-
 
 
         $gClient = new Google_Client();
@@ -37,11 +35,11 @@ class Logout extends CI_Controller
 
 
         //if (array_key_exists('logout', $_GET)) {
-            unset($_SESSION['token']);
-            unset($_SESSION['google_data']); //Google session data unset
-            $gClient->revokeToken();
-            session_destroy();
-            redirect('/login/?Message='.$_GET["Message"], 'location');
+        unset($_SESSION['token']);
+        unset($_SESSION['google_data']); //Google session data unset
+        $gClient->revokeToken();
+        session_destroy();
+        redirect('/login/?Message=' . $_GET["Message"], 'location');
         //}
 
 

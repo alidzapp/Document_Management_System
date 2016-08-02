@@ -49,6 +49,15 @@ class Access_control_model extends CI_Model
 
     }
 
+    public function is_duplicate()
+    {
+
+        $this->group_id = $this->input->post('group_id', true);
+        $this->department_id = $this->input->post('department_id', true);
+        $query = $this->db->get_where($this->config->item('access_control_table'), array('group_id' => $this->group_id, 'department_id' => $this->department_id));
+        return $query->result();
+    }
+
     public function get_last_ten_entries()
     {
         $query = $this->db->get($this->config->item('access_control_table'), 10);
@@ -57,16 +66,14 @@ class Access_control_model extends CI_Model
 
     public function insert_entry()
     {
-        try {
-            $this->group_id = $this->input->post('group_id', true);
-            //$this->role_id = $this->input->post('role_id', true);
-            $this->department_id = $this->input->post('department_id', true);
 
-            $this->db->insert($this->config->item('access_control_table'), $this);
-        } catch (Exception $e) {
-            //throw $e;
-            echo "error";
-        }
+        $this->group_id = $this->input->post('group_id', true);
+        //$this->role_id = $this->input->post('role_id', true);
+        $this->department_id = $this->input->post('department_id', true);
+
+
+        $this->db->insert($this->config->item('access_control_table'), $this);
+
 
         //echo $this->db->last_query();
     }

@@ -5,7 +5,7 @@ class Mydms extends CI_Controller
 {
 
 
-    public  $utilities=array();
+    public $utilities = array();
 
     function __construct()
     {
@@ -15,7 +15,7 @@ class Mydms extends CI_Controller
         if (!isset($_SESSION['google_data'])) {
             redirect('/login/', 'location');
         }
-        $this->utilities["page_name"]="main";
+        $this->utilities["page_name"] = "main";
 
     }
 
@@ -36,10 +36,9 @@ class Mydms extends CI_Controller
 
 
         $this->load->view('header');
-        $this->load->view('wrapper',$this->utilities);
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('user_list');
         $this->load->view('footer');
-
 
 
     }

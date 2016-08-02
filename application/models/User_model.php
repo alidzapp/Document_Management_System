@@ -40,6 +40,16 @@ class User_model extends CI_Model
         return $query->result();
     }
 
+
+    public function is_duplicate()
+    {
+
+        $this->username = $this->input->post('username', true);
+        $this->role_id = $this->input->post('role_id', true);
+        $query = $this->db->get_where($this->config->item('user_table'), array('username' => $this->username, 'role_id' => $this->role_id));
+        return $query->result();
+    }
+
     public function insert_entry()
     {
         $this->username = $this->input->post('username', true);
@@ -61,11 +71,36 @@ class User_model extends CI_Model
 
         $this->db->update($this->config->item('user_table'), $this, array('id' => $this->id));
     }
+
     function row_delete($id)
     {
 
         $this->db->where('id', $id);
-        $this->db->delete($this->config->item('user_table'));
+
+        $row = $this->get_entry_by_id($id)[0];
+        if (isset($row)) {
+            $this->id = $id;
+            $this->is_active = 0;
+            $this->username = $row->username;
+            //var_dump($row);
+            //$this->db->delete($this->config->item('user_table'));
+            $this->db->update($this->config->item('user_table'), $this, array('id' => $this->id));
+        }
+    }
+
+    function row_activate($id)
+    {
+
+        $this->db->where('id', $id);
+
+        $row = $this->get_entry_by_id($id)[0];
+        if (isset($row)) {
+            $this->id = $id;
+            $this->is_active = 1;
+            $this->username = $row->username;
+
+            $this->db->update($this->config->item('user_table'), $this, array('id' => $this->id));
+        }
     }
 
 }

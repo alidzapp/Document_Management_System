@@ -1,4 +1,5 @@
 <?php
+
 /*
  * Copyright 2010 Google Inc.
  *
@@ -15,8 +16,9 @@
  * limitations under the License.
  */
 
-class Google_Service {
-  public $version;
-  public $servicePath;
-  public $resource;
+class Google_Service
+{
+    public $version;
+    public $servicePath;
+    public $resource;
 }

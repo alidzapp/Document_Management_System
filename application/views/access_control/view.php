@@ -13,10 +13,11 @@
 
                         <table class="table table-hover table-striped">
                             <thead>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
+                            <th style="color: red" colspan="4"><?php
+                                if(isset($_GET["err"])){
+                                echo $_GET["err"];
+                                }
+                                ?></th>
                             <th>
                                 <button type="button" class="btn btn-success"
                                         onclick="window.location.href='/access_control/add'">Grant Access

@@ -5,7 +5,7 @@ class User extends CI_Controller
 {
 
 
-    public  $utilities=array();
+    public $utilities = array();
 
     function __construct()
     {
@@ -17,7 +17,7 @@ class User extends CI_Controller
         }
         $this->load->model('User_model');
         $this->load->model('Role_model');
-        $this->utilities["page_name"]="user";
+        $this->utilities["page_name"] = "user";
 
 
     }
@@ -32,7 +32,7 @@ class User extends CI_Controller
 
 
         $this->load->view('header');
-        $this->load->view('wrapper',$this->utilities);
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('user/view', $data);
         $this->load->view('footer');
 
@@ -48,7 +48,7 @@ class User extends CI_Controller
         $data['roles'] = $this->Role_model->get_entries(1000, 0);
 
         $this->load->view('header');
-        $this->load->view('wrapper',$this->utilities);
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('user/edit', $data);
         $this->load->view('footer');
 
@@ -63,8 +63,8 @@ class User extends CI_Controller
 
 
         $this->load->view('header');
-        $this->load->view('wrapper',$this->utilities);
-        $this->load->view('user/add',$data);
+        $this->load->view('wrapper', $this->utilities);
+        $this->load->view('user/add', $data);
         $this->load->view('footer');
 
 
@@ -80,8 +80,13 @@ class User extends CI_Controller
     public function add_exec()
     {
 
-        $data['query'] = $this->User_model->insert_entry();
-        redirect('user/view');
+        if ($this->User_model->is_duplicate()) {
+            $message = "Duplicate User Account entry!!";
+            redirect('user/view?err=' . $message);
+        } else {
+            $data['query'] = $this->User_model->insert_entry();
+            redirect('user/view');
+        }
     }
 
     public function delete_exec()
@@ -90,6 +95,14 @@ class User extends CI_Controller
 
         $id = $this->uri->segment('3');
         $data['query'] = $this->User_model->row_delete($id);
+        redirect('user/view');
+    }
+    public function activate_exec()
+    {
+
+
+        $id = $this->uri->segment('3');
+        $data['query'] = $this->User_model->row_activate($id);
         redirect('user/view');
     }
 

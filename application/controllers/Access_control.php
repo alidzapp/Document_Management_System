@@ -59,15 +59,15 @@ class Access_control extends CI_Controller
 
     public function add_exec()
     {
-       //
 
-        try {
+        if ($this->Access_control_model->is_duplicate()) {
+            $message = "Duplicate Access control entry!!";
+            redirect('access_control/view?err=' . $message);
+        } else {
             $data['query'] = $this->Access_control_model->insert_entry();
-        } catch (Exception $e) {
-            echo 'Caught exception: ', $e->getMessage(), "\n";
-        } finally {
-        redirect('access_control/view');
+            redirect('access_control/view');
         }
+
 
     }
 

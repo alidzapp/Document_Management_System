@@ -27,12 +27,15 @@ function get_name_from_id($data, $id)
 
                         <table class="table table-hover table-striped">
                             <thead>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
-                            <th>&nbsp;</th>
+                            <th style="color: red" colspan="4"><?php
+                                if (isset($_GET["err"])) {
+                                    echo $_GET["err"];
+                                }
+                                ?></th>
                             <th>
-                                <button type="button" class="btn btn-success" onclick="window.location.href='/user/add'">Add User</button>
+                                <button type="button" class="btn btn-success"
+                                        onclick="window.location.href='/user/add'">Add User
+                                </button>
                             </th>
                             </thead>
                             <thead>
@@ -49,14 +52,23 @@ function get_name_from_id($data, $id)
                                 <tr>
                                     <td><?php echo $row->id; ?></td>
                                     <td><?php echo $row->username; ?></td>
-                                    <td><?php echo get_name_from_id($roles,$row->role_id)?></td>
+                                    <td><?php echo get_name_from_id($roles, $row->role_id) ?></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary" onclick="window.location.href='/user/edit/<?php echo $row->id;?>'">Edit</button>
+                                        <button type="button" class="btn btn-primary"
+                                                onclick="window.location.href='/user/edit/<?php echo $row->id; ?>'">Edit
+                                        </button>
                                     </td>
                                     <td>
-                                        <?php if($row->role_id!=2){?>
-                                        <button type="button" class="btn btn-danger" onclick="confirm_first(<?php echo $row->id;?>);">Delete</button>
-                                        <?php }?>
+                                        <?php if ($row->role_id != 2) { ?>
+                                            <?php if ($row->is_active ==1) { ?>
+                                                <button type="button" class="btn btn-warning"
+                                                        onclick="confirm_first(<?php echo $row->id; ?>);">Suspend
+                                                </button>
+                                            <?php } else { ?>
+
+                                                <button type = "button" class="btn btn-info" onclick = "activate_confirm_first(<?php echo $row->id;?>);" > Activate</button >
+                                            <?php } ?>
+                                        <?php } ?>
 
                                     </td>
                                 </tr>
@@ -73,9 +85,14 @@ function get_name_from_id($data, $id)
     </div>
 </div>
 <script>
-    function confirm_first(id){
-        if(confirm('Are you sure you want to delete this record ?')){
-            window.location.href='/user/delete_exec/'+id;
+    function confirm_first(id) {
+        if (confirm('Are you sure you want to suspend this user ?')) {
+            window.location.href = '/user/delete_exec/' + id;
+        }
+    }
+    function activate_confirm_first(id) {
+        if (confirm('Are you sure you want to activate this this ?')) {
+            window.location.href = '/user/activate_exec/' + id;
         }
     }
 </script>

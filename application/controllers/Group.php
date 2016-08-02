@@ -5,7 +5,7 @@ class Group extends CI_Controller
 {
 
 
-    public  $utilities=array();
+    public $utilities = array();
 
     function __construct()
     {
@@ -16,7 +16,7 @@ class Group extends CI_Controller
             redirect('/login/', 'location');
         }
         $this->load->model('Group_model');
-        $this->utilities["page_name"]="group";
+        $this->utilities["page_name"] = "group";
 
 
     }
@@ -30,7 +30,7 @@ class Group extends CI_Controller
 
 
         $this->load->view('header');
-        $this->load->view('wrapper',$this->utilities);
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('group/view', $data);
         $this->load->view('footer');
 
@@ -44,7 +44,7 @@ class Group extends CI_Controller
         $id = $this->uri->segment('3');
         $data['query'] = $this->Group_model->get_entry_by_id($id);
         $this->load->view('header');
-        $this->load->view('wrapper',$this->utilities);
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('group/edit', $data);
         $this->load->view('footer');
 
@@ -56,7 +56,7 @@ class Group extends CI_Controller
 
 
         $this->load->view('header');
-        $this->load->view('wrapper',$this->utilities);
+        $this->load->view('wrapper', $this->utilities);
         $this->load->view('group/add');
         $this->load->view('footer');
 
