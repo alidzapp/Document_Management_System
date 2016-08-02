@@ -27,7 +27,7 @@
                                     <td><?php echo $row->id; ?></td>
                                 </tr>
                                 <tr>
-                                    <th>Title</th>
+                                    <th>Topic</th>
                                     <td><input value="<?php echo $row->title; ?>" name="title" required="true"></td>
                                 </tr>
                                 <tr>

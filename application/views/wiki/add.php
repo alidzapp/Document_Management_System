@@ -14,7 +14,7 @@
                                 <tbody>
 
                                 <tr>
-                                    <td>Title</td>
+                                    <td>Topic</td>
                                     <td><input value="" name="title" required="true"></td>
                                 </tr>
                                 <tr>

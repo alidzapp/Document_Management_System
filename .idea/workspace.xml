@@ -3,78 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="16012fb9-9e9f-47ec-9b51-afde20e60455" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Access_control.php" afterPath="$PROJECT_DIR$/application/controllers/Access_control.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Department.php" afterPath="$PROJECT_DIR$/application/controllers/Department.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Group.php" afterPath="$PROJECT_DIR$/application/controllers/Group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Login.php" afterPath="$PROJECT_DIR$/application/controllers/Login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Logout.php" afterPath="$PROJECT_DIR$/application/controllers/Logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Mydms.php" afterPath="$PROJECT_DIR$/application/controllers/Mydms.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Role.php" afterPath="$PROJECT_DIR$/application/controllers/Role.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/User.php" afterPath="$PROJECT_DIR$/application/controllers/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/index.html" afterPath="$PROJECT_DIR$/application/controllers/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/Google_Client.php" afterPath="$PROJECT_DIR$/application/controllers/src/Google_Client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_AssertionCredentials.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_AssertionCredentials.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_Auth.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_Auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_AuthNone.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_AuthNone.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_LoginTicket.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_LoginTicket.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_OAuth2.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_OAuth2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_P12Signer.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_P12Signer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_PemVerifier.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_PemVerifier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_Signer.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_Signer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/auth/Google_Verifier.php" afterPath="$PROJECT_DIR$/application/controllers/src/auth/Google_Verifier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/cache/Google_ApcCache.php" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_ApcCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/cache/Google_Cache.php" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_Cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/cache/Google_FileCache.php" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_FileCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/cache/Google_MemcacheCache.php" afterPath="$PROJECT_DIR$/application/controllers/src/cache/Google_MemcacheCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/config.php" afterPath="$PROJECT_DIR$/application/controllers/src/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdexchangebuyerService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdexchangebuyerService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdsenseService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdsenseService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdsensehostService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AdsensehostService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AnalyticsService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_AnalyticsService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BigqueryService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BigqueryService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BloggerService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BloggerService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BooksService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_BooksService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_CalendarService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_CalendarService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ComputeService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ComputeService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_CustomsearchService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_CustomsearchService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_DriveService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_DriveService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_FreebaseService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_FreebaseService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_FusiontablesService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_FusiontablesService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_GanService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_GanService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_LatitudeService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_LatitudeService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_LicensingService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_LicensingService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ModeratorService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ModeratorService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_Oauth2Service.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_Oauth2Service.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_OrkutService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_OrkutService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PagespeedonlineService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PagespeedonlineService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PlusMomentsService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PlusMomentsService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PlusService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PlusService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PredictionService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_PredictionService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ShoppingService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_ShoppingService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_SiteVerificationService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_SiteVerificationService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_StorageService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_StorageService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TaskqueueService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TaskqueueService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TasksService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TasksService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TranslateService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_TranslateService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_UrlshortenerService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_UrlshortenerService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_WebfontsService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_WebfontsService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/contrib/Google_YoutubeService.php" afterPath="$PROJECT_DIR$/application/controllers/src/contrib/Google_YoutubeService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/external/URITemplateParser.php" afterPath="$PROJECT_DIR$/application/controllers/src/external/URITemplateParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/io/Google_CacheParser.php" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_CacheParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/io/Google_CurlIO.php" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_CurlIO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/io/Google_HttpRequest.php" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_HttpRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/io/Google_IO.php" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_IO.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/io/Google_REST.php" afterPath="$PROJECT_DIR$/application/controllers/src/io/Google_REST.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/service/Google_BatchRequest.php" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_BatchRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/service/Google_MediaFileUpload.php" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_MediaFileUpload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/service/Google_Model.php" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/service/Google_Service.php" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_Service.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/service/Google_ServiceResource.php" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_ServiceResource.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/src/service/Google_Utils.php" afterPath="$PROJECT_DIR$/application/controllers/src/service/Google_Utils.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Access_control_model.php" afterPath="$PROJECT_DIR$/application/models/Access_control_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/User_model.php" afterPath="$PROJECT_DIR$/application/models/User_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/access_control/view.php" afterPath="$PROJECT_DIR$/application/views/access_control/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/user/view.php" afterPath="$PROJECT_DIR$/application/views/user/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/add.php" afterPath="$PROJECT_DIR$/application/views/wiki/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/edit.php" afterPath="$PROJECT_DIR$/application/views/wiki/edit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/wiki/view.php" afterPath="$PROJECT_DIR$/application/views/wiki/view.php" />
     </list>
     <ignored path="mydms.iws" />
@@ -96,12 +26,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="Wiki_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Wiki_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wiki.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Wiki.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2004">
+              <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/wiki/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6893">
-              <caret line="245" column="14" selection-start-line="245" selection-start-column="14" selection-end-line="245" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="1276">
+              <caret line="77" column="67" selection-start-line="77" selection-start-column="67" selection-end-line="77" selection-end-column="67" />
+              <folding>
+                <element signature="e#1493#1499#1#HTML" expanded="true" />
+                <element signature="e#1549#1555#1#HTML" expanded="true" />
+                <element signature="e#1605#1611#1#HTML" expanded="true" />
+                <element signature="e#1661#1667#1#HTML" expanded="true" />
+                <element signature="e#1717#1723#1#HTML" expanded="true" />
+                <element signature="e#2507#2513#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,12 +112,10 @@
         <option value="$PROJECT_DIR$/application/views/user_group/add.php" />
         <option value="$PROJECT_DIR$/application/views/user_group/view.php" />
         <option value="$PROJECT_DIR$/application/views/access_control/add.php" />
-        <option value="$PROJECT_DIR$/application/views/wiki/edit.php" />
         <option value="$PROJECT_DIR$/application/views/login.php" />
         <option value="$PROJECT_DIR$/includes/functions.php" />
         <option value="$PROJECT_DIR$/application/models/Department_model.php" />
         <option value="$PROJECT_DIR$/application/views/header.php" />
-        <option value="$PROJECT_DIR$/application/views/wiki/add.php" />
         <option value="$PROJECT_DIR$/application/controllers/Wiki.php" />
         <option value="$PROJECT_DIR$/application/models/Wiki_model.php" />
         <option value="$PROJECT_DIR$/application/views/wrapper.php" />
@@ -171,6 +126,8 @@
         <option value="$PROJECT_DIR$/application/controllers/User.php" />
         <option value="$PROJECT_DIR$/application/models/User_model.php" />
         <option value="$PROJECT_DIR$/application/views/user/view.php" />
+        <option value="$PROJECT_DIR$/application/views/wiki/add.php" />
+        <option value="$PROJECT_DIR$/application/views/wiki/edit.php" />
         <option value="$PROJECT_DIR$/application/views/wiki/view.php" />
       </list>
     </option>
@@ -301,6 +258,46 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user_group" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mydms" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -396,12 +393,12 @@
       <workItem from="1469783971968" duration="224000" />
       <workItem from="1469784206780" duration="10902000" />
       <workItem from="1470040190205" duration="15160000" />
-      <workItem from="1470130047751" duration="5256000" />
+      <workItem from="1470130047751" duration="7248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100407000" />
+    <option name="totallyTimeSpent" value="102399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="2560" extended-state="6" />
@@ -556,31 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/User_group_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1382">
-          <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="16" />
-          <folding>
-            <marker date="1470044248997" expanded="true" signature="2056:2193" ph="SELECT `user... user" />
-            <marker date="1470044248997" expanded="true" signature="2056:2205" ph="SELECT `user... user" />
-            <marker date="1470044248997" expanded="true" signature="2141:2193" ph="select user_... user_group" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/user_group/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding>
-            <element signature="e#2276#2282#0#HTML" expanded="false" />
-            <element signature="e#2282#2288#0#HTML" expanded="false" />
-            <element signature="e#2292#2298#0#HTML" expanded="false" />
-            <element signature="e#2298#2304#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/user_group/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1131">
@@ -655,34 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/wiki/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/wiki/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Wiki.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Wiki_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1160">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="8" selection-end-line="41" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Access_control_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="889">
@@ -789,7 +729,7 @@
         <state relative-caret-position="435">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="19" selection-end-column="39" />
           <folding>
-            <element signature="n#style#0;n#th#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -798,14 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="65" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/User_group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1657">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -834,11 +766,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/wiki/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/wiki/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="34" column="82" selection-start-line="34" selection-start-column="82" selection-end-line="34" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/user_group/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/User_group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1657">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/User_group_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="77" column="62" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="62" />
+          <folding>
+            <marker date="1470044248997" expanded="true" signature="2056:2193" ph="SELECT `user... user" />
+            <marker date="1470044248997" expanded="true" signature="2056:2205" ph="SELECT `user... user" />
+            <marker date="1470044248997" expanded="true" signature="2141:2193" ph="select user_... user_group" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Wiki.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2004">
+          <caret line="79" column="17" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Wiki_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/wiki/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6893">
-          <caret line="245" column="14" selection-start-line="245" selection-start-column="14" selection-end-line="245" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="1276">
+          <caret line="77" column="67" selection-start-line="77" selection-start-column="67" selection-end-line="77" selection-end-column="67" />
+          <folding>
+            <element signature="e#1493#1499#1#HTML" expanded="true" />
+            <element signature="e#1549#1555#1#HTML" expanded="true" />
+            <element signature="e#1605#1611#1#HTML" expanded="true" />
+            <element signature="e#1661#1667#1#HTML" expanded="true" />
+            <element signature="e#1717#1723#1#HTML" expanded="true" />
+            <element signature="e#2507#2513#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
