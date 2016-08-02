@@ -49,8 +49,12 @@
 
                                 </tr>
                                 <tr>
-                                    <td colspan="2" align="center">
+                                    <td  align="center" colspan="2">
 
+                                        <button type="button" class="btn btn-secondary" onclick=" window.history.back();">
+                                            Cancel
+                                        </button>
+                                        &nbsp;
                                         <button type="submit" class="btn btn-secondary">
                                             Save
                                         </button>

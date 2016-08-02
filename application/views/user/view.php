@@ -54,9 +54,11 @@ function get_name_from_id($data, $id)
                                     <td><?php echo $row->username; ?></td>
                                     <td><?php echo get_name_from_id($roles, $row->role_id) ?></td>
                                     <td>
+                                        <?php if ($row->role_id != 2) { ?>
                                         <button type="button" class="btn btn-primary"
                                                 onclick="window.location.href='/user/edit/<?php echo $row->id; ?>'">Edit
                                         </button>
+                                        <?php } ?>
                                     </td>
                                     <td>
                                         <?php if ($row->role_id != 2) { ?>
