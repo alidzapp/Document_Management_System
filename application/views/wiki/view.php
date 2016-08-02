@@ -22,7 +22,7 @@ function get_name_from_id($data, $id)
     foreach ($departments as $tab) {
         ?>
         <li <?php if ($counter == 0){ ?>class="active"<?php } ?>><a data-toggle="tab"
-                                                                    href="#home<?php echo $tab->id ?>"><?php echo $tab->name ?></a>
+                                                                    href="#<?php echo md5($tab->id); ?>"><?php echo $tab->name ?></a>
         </li>
 
         <?php
@@ -36,15 +36,15 @@ function get_name_from_id($data, $id)
     $counter = 0;
     foreach ($departments as $tab) {
         ?>
-        <div id="home<?php echo $tab->id ?>" class="tab-pane fade <?php if ($counter == 0){ ?>in active<?php } ?>">
+        <div id="<?php echo md5($tab->id); ?>" class="tab-pane fade <?php if ($counter == 0){ ?>in active<?php } ?>">
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
-                                <div class="header">
-                                    <h4 class="title">Wiki</h4>
-                                </div>
+                                <!--div class="header">
+                                    <h4 class="title">&nbsp;</h4>
+                                </div-->
                                 <div class="content table-responsive table-full-width">
 
                                     <table class="table table-hover table-striped">
@@ -119,12 +119,39 @@ function get_name_from_id($data, $id)
         $counter += 1;
     } ?>
 </div>
+<script>
+    var topics=[
+        <?php
+        foreach ($query as $row) {
+        ?>
+        {Topic:"<?php echo $row->title?>",ID:<?php echo md5($row->id)?>},
+        <?php }?>
+        {Topic:"",ID:0}
+    ];
 
+</script>
 <script>
     function confirm_first(id) {
         if (confirm('Are you sure you want to delete this record ?')) {
             window.location.href = '/wiki/delete_exec/' + id;
         }
+    }
+</script>
+
+
+<script language="javascript" type="text/javascript">
+    //<input type="text" onkeyup="filter(this)" />
+    function filter(element) {
+        var value = $(element).val();
+
+        $("#theList > li").each(function() {
+            if ($(this).text().search(value) > -1) {
+                $(this).show();
+            }
+            else {
+                $(this).hide();
+            }
+        });
     }
 </script>
 
