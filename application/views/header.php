@@ -29,7 +29,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="/assets/css/pe-icon-7-stroke.css" rel="stylesheet"/>
 
-    <script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+    <script src='/assets/tinymce/js/tinymce/tinymce.min.js'></script>
 
     <!--   Core JS Files   -->
     <script src="/assets/js/jquery-1.10.2.js" type="text/javascript"></script>

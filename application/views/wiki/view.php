@@ -124,7 +124,7 @@ function get_name_from_id($data, $id)
         <?php
         foreach ($query as $row) {
         ?>
-        {Topic:"<?php echo $row->title?>",ID:<?php echo md5($row->id)?>},
+        {Topic:"<?php echo $row->title?>",ID:'<?php echo md5($row->id)?>'},
         <?php }?>
         {Topic:"",ID:0}
     ];
