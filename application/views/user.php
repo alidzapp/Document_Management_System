@@ -9,9 +9,7 @@
                     </div>
                     <div class="col-md-12">
                         <div class="card card-user">
-                            <div class="image">
-                                <img src="/assets/img/ca.png" alt="..."/>
-                            </div>
+
                             <div class="content">
                                 <div class="author">
                                      <a href="#">
